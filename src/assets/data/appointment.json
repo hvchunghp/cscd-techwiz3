@@ -105,5 +105,87 @@
                 "time": "21:00 - 21:30"
             }
         ]
+    ],
+
+    "doctorInfo": [{
+            "title": "Assoc., PhD, Senior Lecturer Tran Huu Binh",
+            "content": [{
+                    "row": "The title of People's Doctor"
+                },
+                {
+                    "row": "Doctor specializing in Psychiatry, Psychiatry"
+                },
+                {
+                    "row": "Former Director of the National Institute of Mental Health, Bach Mai Hospital"
+                },
+                {
+                    "row": "Former Vice Dean of the Department of Psychiatry, Hanoi Medical University"
+                }
+            ]
+        },
+        {
+            "title": "Working process",
+            "content": [{
+                    "row": "Associate Professor, Doctor of Medical Examination at Medical Center 1, Hanoi Medical University Hospital"
+                },
+                {
+                    "row": "Chairing clinical consultations with Psychiatric patients at the Institute of Mental Health, Bach Mai Hospital"
+                },
+                {
+                    "row": "Training (teaching, guiding, marking the thesis) Doctorate, Master, Specialist II, Resident doctor specializing in Psychiatry, Public Health Hanoi Medical University"
+                },
+                {
+                    "row": "Director of Institute of Mental Health, Bach Mai Hospital (2008 - 2011)"
+                },
+                {
+                    "row": "Head of Substance Handling Department, Institute of Mental Health, Bach Mai Hospital (2010 - 2014)"
+                },
+                {
+                    "row": "Head of Psychiatry Department, Southern Institute of Mental Health, Bach Mai Hospital (1995 - 2008)"
+                },
+                {
+                    "row": "Vice Chairman of the Department of Psychiatry, Hanoi Medical University (1995 - 2014)"
+                },
+                {
+                    "row": "Doctor - teaching staff of the Department of Psychiatry, Hanoi Medical University (1978 - 1994)"
+                }
+            ]
+        },
+        {
+            "title": "Training process",
+            "content": [{
+                    "row": "Senior Lecturer in Psychiatry, Ministry of Education and Training (2014)"
+                },
+                {
+                    "row": "Associate Professor of Psychiatry, Ministry of Education and Training (2007)"
+                },
+                {
+                    "row": "Doctor of Psychiatry, Hanoi Medical University (2003)"
+                }
+            ]
+        },
+        {
+            "title": "Books and scientific works",
+            "content": [{
+                    "row": "Participating in compiling, editing and co-editing 16 books, which are teaching textbooks and monographs specialized in Psychiatry and medicine in general (2003 - 2018)."
+                },
+                {
+                    "row": "More than 50 scientific research works have been published in prestigious scientific journals (Scientific Research Journal of Hanoi Medical University, Journal of the Vietnam General Association of Medicine and Pharmacy, Journal of Practical Medicine of the Ministry of Health). Journal of the Vietnam Psychiatric Association). (1992 - 2020)"
+                },
+                {
+                    "row": "Guide to successfully defend 31 doctoral theses, master's theses, level 2 specialist, Hospital resident, public health Hanoi Medical University (2003 - 2020)"
+                }
+            ]
+        },
+        {
+            "title": "Members of scientific associations and professional organizations",
+            "content": [{
+                    "row": "Executive Committee of Vietnam Psychiatric Association"
+                },
+                {
+                    "row": "Vice Chairman of the Scientific Council of the Research Institute for the Treatment of Critical Illnesses"
+                }
+            ]
+        }
     ]
 }

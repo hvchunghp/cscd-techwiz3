@@ -13,7 +13,7 @@ export class AppointmentsComponent implements OnInit {
   timeMonth = '';
   arr = appointment.array[0];
 
-  schedules: any = appointment;
+  docInfo = appointment;
 
   change(value: any) {
     this.arr = appointment.array[value.value];
