@@ -22,11 +22,11 @@ const routes: Routes = [
     component: AppointmentsComponent,
     title: 'Appointments',
   },
-  {
-    path: 'test',
-    component: SelfHealthTipsComponent,
-    title: 'Appointments',
-  },
+  // {
+  //   path: 'test',
+  //   component: TestComponent,
+  //   title: 'Appointments',
+  // },
   {
     path: 'contact',
     component: ContactComponent,

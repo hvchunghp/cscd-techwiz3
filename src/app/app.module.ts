@@ -15,6 +15,8 @@ import { HealthMeasuresComponent } from './components/health-measures/health-mea
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,12 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    CarouselModule,
+    BrowserAnimationsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
