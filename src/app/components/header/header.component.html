@@ -1,7 +1,20 @@
 <header class="home-header-container container">
     <div class="home-header-content row d-flex justify-content-center">
         <div class="left-content d-flex justify-content-start align-items-center col-6 col-md-6 col-lg-3">
-            <i class="fa-solid fa-bars"></i>
+            <div class="offcanvas offcanvas-start" id="subHeader">
+                <div class="offcanvas-header">
+                    <a routerLink="">
+                        <img src="../../../assets/images/logo.png" alt="" />
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <p>Some text lorem ipsum.</p>
+                    <p>Some text lorem ipsum.</p>
+                    <p>Some text lorem ipsum.</p>
+                </div>
+            </div>
+            <i class="fa-solid fa-bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#subHeader"></i>
             <a routerLink="">
                 <img src="../../../assets/images/logo.png" alt="" />
             </a>
