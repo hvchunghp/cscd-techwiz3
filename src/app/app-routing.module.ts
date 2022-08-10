@@ -7,18 +7,29 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '', component: HomeComponent,title: 'Home'
+    path: '',
+    component: HomeComponent,
+    title: 'Home',
   },
   {
-    path: 'login', component: LoginComponent,title: 'Login'
+    path: 'login',
+    component: LoginComponent,
+    title: 'Login',
   },
   {
-    path: 'appointments', component: AppointmentsComponent,title: 'Appointments'
-  }
+    path: 'appointments',
+    component: AppointmentsComponent,
+    title: 'Appointments',
+  },
+  {
+    path: 'test',
+    component: SelfHealthTipsComponent,
+    title: 'Appointments',
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
