@@ -1,14 +1,18 @@
-<h2 class="title">Patient feedback after visiting</h2>
-<div class="feedback-list" *ngIf="data">
-    <div class="feedback-item" *ngFor="let f of data.feedbackData">
-        <div class="feedback-name">
-            <strong>{{f.name}} </strong> &nbsp;
-            <a class="feedback-info">
-                <i class="fa-solid fa-circle-check"></i> Examined at {{f.examinedAt}}
-            </a>
-        </div>
-        <div class="feedback-content">
-            {{f.comment}}
+<div class="feedback py-5 mt-5">
+    <div class="container">
+        <h2 class="title">Patient feedback after visiting</h2>
+        <div class="feedback-list" *ngIf="data">
+            <div class="feedback-item" *ngFor="let f of data.feedbackData">
+                <div class="feedback-name">
+                    <strong>{{f.name}} </strong> &nbsp;
+                    <a class="feedback-info">
+                        <i class="fa-solid fa-circle-check"></i> Examined at {{f.examinedAt}}
+                    </a>
+                </div>
+                <div class="feedback-content">
+                    {{f.comment}}
+                </div>
+            </div>
         </div>
     </div>
 </div>

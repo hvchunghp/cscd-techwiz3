@@ -1,18 +1,27 @@
 .title {
-  margin: 15px 0;
-  font-size: 20px;
-  font-weight: bold;
-}
-.feedback-item {
-  padding-bottom: 10px;
-  padding-top: 10px;
-  border-top: 1px solid #eee;
-}
-a, a:link, a:visited, a:hover, a:active{
-  color: #45c3d2;
-  text-decoration: none;
-};
-.feedback-content{
-  padding-top: 5px;
+    margin: 15px 0;
+    font-weight: bold;
 }
 
+.feedback-item {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #45c3d2;
+    text-decoration: none;
+}
+
+.feedback-content {
+    padding-top: 5px;
+}
+
+.feedback {
+    border-top: 1px solid gray;
+}

@@ -3,7 +3,8 @@ a {
 }
 
 header {
-    width: 100vw;
+    width: 100vw !important;
+    background: linear-gradient( 135deg, rgb(78, 235, 247) 0%, rgb(159, 247, 235) 100%);
 }
 
 ul,
