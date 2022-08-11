@@ -29,7 +29,7 @@
 <div class="container py-5">
     <owl-carousel-o [options]="slide">
         <ng-template carouselSlide *ngFor="let item of home.homeSlide1">
-            <div class="slide px-2">
+            <div class="slide pr-2">
                 <a href="">
                     <img src="{{item.image}}">
                     <h5><b class="text-dark">{{item.title}}</b></h5>
@@ -92,7 +92,7 @@
     <owl-carousel-o [options]="staticSlide">
         <ng-template carouselSlide *ngFor="let item of home.homeSlide5">
             <div class="slide">
-                <a href="" class="d-flex justify-content-center row">
+                <a routerLink="appointments" class="d-flex justify-content-center row">
                     <div class="doc-img row text-center d-flex justify-content-center">
                         <img src="{{item.image}}" class="p-2">
                         <h6><span class="text-dark">{{item.title}}</span></h6>
