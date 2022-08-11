@@ -35,11 +35,29 @@
             </div>
         </div>
         <div class="center-content justify-content-between align-items-center d-none d-md-none d-lg-flex col-lg-7">
-            <div class="child-content px-1" *ngFor="let item of headerContent">
+            <div class="child-content px-1" data-bs-toggle="offcanvas" data-bs-target="#specialist">
                 <div>
-                    <b> {{item.title}} </b>
+                    <b>Medical specialist</b>
                 </div>
-                <div class="sub-title">{{item.subTitle}}</div>
+                <div class="sub-title">Find a doctor by specialty</div>
+            </div>
+            <div class="child-content px-1" data-bs-toggle="offcanvas" data-bs-target="#">
+                <div>
+                    <b>Health facilities</b>
+                </div>
+                <div class="sub-title">Choose hospital, clinic</div>
+            </div>
+            <div class="child-content px-1" data-bs-toggle="offcanvas" data-bs-target="#">
+                <div>
+                    <b>Doctor</b>
+                </div>
+                <div class="sub-title">Choose a good doctor</div>
+            </div>
+            <div class="child-content px-1" data-bs-toggle="offcanvas" data-bs-target="#Musculoskeletal">
+                <div>
+                    <b>Check-up package</b>
+                </div>
+                <div class="sub-title">General health check</div>
             </div>
         </div>
         <div class="right-content d-flex justify-content-end align-items-center col-6 col-md-6 col-lg-2">
@@ -52,3 +70,23 @@
         </div>
     </div>
 </header>
+
+<div class="offcanvas offcanvas-top header-opt" id="specialist">
+    <div class="offcanvas-header">
+        <div class="d-flex align-items-center">
+            <button type="button" class="btn back" data-bs-dismiss="offcanvas"><i class="fa-solid fa-left"></i></button>
+            <h3 class="px-3">Medical specialist</h3>
+        </div>
+    </div>
+    <div class="offcanvas-body row">
+        <div class="col-12 px-5" *ngFor="let item of header.col1">
+            <a href="" class="row p-3" style="border-top: 1px solid black">
+                <img data-src="{{item.image}}" class="col-lg-4 col-md-12 col-12">
+                <div class="col-lg-8 col-md-12 col-12">
+                    <h3>{{item.title}}</h3>
+                    <p class="text-muted" *ngFor=" let item2 of item.desc ">- {{item2.content}}</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,37 +1,43 @@
-*{
-  box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
-.background{
-  background-color: #efefef;
-}
-.appointment-item h4{
-  color: rgb(2, 139, 180);
-}
-.nav{
-  background-color: #ffffff;
-  border-radius: 0.375rem;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-}
-.appointment-item{
 
-  background-color: #ffffff;
-  border-radius: 0.5rem;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+.appointment-item h4 {
+    color: rgb(2, 139, 180);
 }
+
+.nav {
+    background-color: #ffffff;
+    border-radius: 0.375rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.appointment-item {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
 img {
-  border-radius: 50%;
-  width: 100%;
-  height: auto;
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
 }
-a{
-  color: black;
-  cursor: pointer;
-}
-a:hover {
-  color: rgb(2, 139, 180);
-  background-color: #eeeeee;
-}
-.nav-pills .active {
-  background-color: rgb(2, 139, 180);
-  }
 
+a {
+    color: black;
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(2, 139, 180);
+    background-color: #eeeeee;
+}
+
+.nav-pills .active {
+    background-color: rgb(2, 139, 180);
+}
+
+// .modal-content {
+//     margin-top: calc(50vh - 226px);
+// }

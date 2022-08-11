@@ -1,0 +1,218 @@
+{
+    "col1": [{
+            "image": "../../assets/images/spec7.jpg",
+            "title": "Counseling and therapy",
+            "desc": [{
+                    "content": "Difficulties, psychological disturbances"
+                },
+                {
+                    "content": "Personal development"
+                },
+                {
+                    "content": "Conflict, abuse and trauma"
+                },
+                {
+                    "content": "Social reintegration"
+                },
+                {
+                    "content": "Disability issues and disadvantaged groups"
+                },
+                {
+                    "content": "Juvenile problems"
+                },
+                {
+                    "content": "Gender and sexuality"
+                },
+                {
+                    "content": "Problems in family relationships"
+                }
+            ]
+        },
+        {
+            "image": "../../assets/images/spec2.jpg",
+            "title": "Nerve",
+            "desc": [{
+                    "content": "Cerebral palsy"
+                },
+                {
+                    "content": "Headache, Dizziness, Nausea"
+                },
+                {
+                    "content": "Parkinson's disease, vestibular disease"
+                },
+                {
+                    "content": "Muscle spasms, nerve tension"
+                },
+                {
+                    "content": "Seizures, there are episodes of loss of consciousness"
+                },
+                {
+                    "content": "Paralyzed half face, pinched nerve"
+                },
+                {
+                    "content": "Restlessness, anxiety, nervousness, trembling limbs"
+                },
+                {
+                    "content": "There are signs of hyperactivity"
+                }
+            ]
+        },
+        {
+            "image": "../../assets/images/spec3.jpg",
+            "title": "Digestion",
+            "desc": [{
+                    "content": "Eating poorly, not delicious"
+                },
+                {
+                    "content": "Digestive disorders, constipation, hemorrhoids"
+                },
+                {
+                    "content": "Helicobacter pylori (HP) infection"
+                },
+                {
+                    "content": "Endoscopy of the stomach, colon, gastrointestinal tract"
+                },
+                {
+                    "content": "Nausea, bloating, stomach bloating, heartburn, flatulence"
+                },
+                {
+                    "content": "Esophageal spasm, Irritable bowel syndrome"
+                },
+                {
+                    "content": "Abdominal, stomach, colon, epigastric pain"
+                },
+                {
+                    "content": "Inflammation of the colon, stomach, duodenum"
+                }
+            ]
+        },
+        {
+            "image": "../../assets/images/spec1.jpg",
+            "title": "Musculoskeletal",
+            "desc": [{
+                    "content": "Gout"
+                },
+                {
+                    "content": "Osteoarthritis: knee joint, lumbar spine, cervical spine"
+                },
+                {
+                    "content": "Rheumatoid Arthritis, Polyarthritis, Tendonitis"
+                },
+                {
+                    "content": "Knee effusion, Hip effusion, Elbow effusion, Shoulder effusion"
+                },
+                {
+                    "content": "Osteoporosis, bone pain"
+                },
+                {
+                    "content": "Osteoarthritis, bone spurs"
+                },
+                {
+                    "content": "Myositis, Muscle Atrophy, Myalgia"
+                },
+                {
+                    "content": "Muscle weakness, Muscular dystrophy"
+                },
+                {
+                    "content": "Injuries to muscles, bones, joints"
+                }
+            ]
+        },
+        {
+            "image": "../../assets/images/spec4.jpg",
+            "title": "Cardiovascular",
+            "desc": [{
+                    "content": "Shortness of breath, Chest pain, heart attack"
+                },
+                {
+                    "content": "High blood pressure, low blood pressure"
+                },
+                {
+                    "content": "Dyslipidemia, high blood pressure, dizziness"
+                },
+                {
+                    "content": "Heart valve disease (Vulval stenosis), Aortic stenosis"
+                },
+                {
+                    "content": "Feeling nervous, heart beating fast"
+                },
+                {
+                    "content": "Congenital heart, history of heart disease, history of stroke"
+                },
+                {
+                    "content": "Heart stent placed, coronary angioplasty"
+                },
+                {
+                    "content": "Varicose veins leg"
+                }
+            ]
+        },
+        {
+            "image": "../../assets/images/spec5.jpg",
+            "title": "Ear, nose and throat",
+            "desc": [{
+                    "content": "Tinnitus, ear pain, ear bleeding"
+                },
+                {
+                    "content": "Perforated eardrum, sudden deafness"
+                },
+                {
+                    "content": "Otitis media"
+                },
+                {
+                    "content": "Amidan, V.A"
+                },
+                {
+                    "content": "Sinusitis"
+                },
+                {
+                    "content": "Stuffy nose"
+                },
+                {
+                    "content": "Or nosebleed"
+                },
+                {
+                    "content": "Sore throat, difficulty swallowing"
+                },
+                {
+                    "content": "Prolonged cough"
+                }
+            ]
+        },
+        {
+            "image": "../../assets/images/spec6.jpg",
+            "title": "Dermatology",
+            "desc": [{
+                    "content": "Psoriasis, Dry skin, Itchy skin"
+                },
+                {
+                    "content": "Freckles"
+                },
+                {
+                    "content": "Genital warts"
+                },
+                {
+                    "content": "Body fungus, Scalp fungus"
+                },
+                {
+                    "content": "Toenail fungus"
+                },
+                {
+                    "content": "Hair loss, baldness"
+                },
+                {
+                    "content": "Atopic Dermatitis, Contact Dermatitis, Seborrheic Dermatitis"
+                },
+                {
+                    "content": "Folliculitis"
+                },
+                {
+                    "content": "Scleroderma"
+                },
+                {
+                    "content": "Shingles nerve"
+                }
+            ]
+        }
+    ]
+}

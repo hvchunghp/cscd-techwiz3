@@ -21,6 +21,7 @@ li {
         height: 100%;
         .center-content {
             .child-content {
+                cursor: pointer;
                 @media (max-width: 1200px) {
                     div {
                         b {
@@ -97,4 +98,13 @@ li {
             opacity: 50%;
         }
     }
+}
+
+.header-opt {
+    height: 100vh;
+}
+
+.back {
+    border: none;
+    font-size: 30px;
 }
