@@ -3,8 +3,14 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'techwiz3';
+  onActivate(event: any) {
+    window.scroll({
+      top: 0,
+      left: 10,
+      behavior: 'smooth',
+    });
+  }
 }
