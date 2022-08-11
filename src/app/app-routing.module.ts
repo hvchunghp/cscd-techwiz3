@@ -35,17 +35,15 @@ const routes: Routes = [
     title: 'Contact',
   },
   {
-<<<<<<< HEAD
   path: 'question',
   component: QuestionComponent,
   title: 'Question',
-  }
-=======
+  },
+{
     path: 'confirm-book',
     component: BookAnApointmentComponent,
     title: 'Confirm Book',
   },
->>>>>>> f0080630de5db747df032090ffeb1736a8c5eb97
 ];
 
 @NgModule({
