@@ -15,6 +15,7 @@ import { HealthMeasuresComponent } from './components/health-measures/health-mea
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { QuestionComponent } from './components/question/question.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { FooterComponent } from './components/footer/footer.component';
     FeedbackComponent,
     ContactComponent,
     FooterComponent,
+    QuestionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

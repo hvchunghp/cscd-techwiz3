@@ -53,3 +53,39 @@ li {
         }
     }
 }
+#subHeader {
+    width: 300px;
+}
+.offcanvas-body{
+    font-size: 1.3rem;
+    padding-top: 0!important;
+    padding-left: 0;
+    overflow-x: hidden;
+    ul {
+        padding-left: 0;
+    li{
+        border-bottom: 1px solid #3498db;
+        width: 100vw;
+        padding-top: 10px;
+        a{
+            color: #3498db;
+            padding-left: 1rem;
+        }
+    }
+    }
+    .about-us {
+        padding-left: 10px;
+        background-color: #f1f1f1;
+        margin: 0;
+        width: 100vw;
+    }
+}
+.social-network {
+    padding: 10px 0 0 40px;
+    a {
+        padding-left: 20px;
+        i {
+            font-size: 40px!important;
+        }
+    }
+}
