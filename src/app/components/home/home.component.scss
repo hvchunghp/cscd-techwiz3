@@ -1,12 +1,11 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css");
 ul,
 li {
     list-style: none;
 }
 
-main {
-    overflow-x: hidden;
-    width: 100%;
+a {
+    text-decoration: none;
 }
 
 .home-header-banner {
@@ -107,6 +106,67 @@ main {
                     span {
                         color: rgb(3, 183, 238);
                     }
+                }
+            }
+        }
+    }
+}
+
+.slide {
+    width: auto;
+    height: auto;
+    img {
+        width: 260px;
+        height: 150px;
+    }
+    @media (max-width: 576px) {
+        img {
+            width: 400px;
+            height: 300px;
+        }
+    }
+}
+
+.medical-online {
+    background-color: #f5f5f5;
+    width: 100vw;
+    a {
+        i {
+            display: inline-block;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            color: #fff;
+            background: #388e3c;
+            padding: 5px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.outstanding-medical-facility {
+    background-color: #f5f5f5;
+    width: 100vw;
+}
+
+.doctor {
+    .slide {
+        margin: 5px;
+        a {
+            .doc-img {
+                width: 260px;
+                height: 245px;
+                border: 1px solid #eee;
+                margin: 0;
+                img {
+                    border-radius: 50%;
+                    height: 130px;
+                    width: 130px;
                 }
             }
         }

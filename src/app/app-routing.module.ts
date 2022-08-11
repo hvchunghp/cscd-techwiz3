@@ -1,3 +1,4 @@
+import { BookAnApointmentComponent } from './components/book-an-apointment/book-an-apointment.component';
 import { AppointmentsComponent } from './components/appointments/appointments.component';
 import { SelfHealthTipsComponent } from './components/self-health-tips/self-health-tips.component';
 import { LoginComponent } from './components/login/login.component';
@@ -23,21 +24,28 @@ const routes: Routes = [
     component: AppointmentsComponent,
     title: 'Appointments',
   },
-  {
-    path: 'test',
-    component: SelfHealthTipsComponent,
-    title: 'Appointments',
-  },
+  // {
+  //   path: 'test',
+  //   component: TestComponent,
+  //   title: 'Appointments',
+  // },
   {
     path: 'contact',
     component: ContactComponent,
     title: 'Contact',
   },
   {
+<<<<<<< HEAD
   path: 'question',
   component: QuestionComponent,
   title: 'Question',
   }
+=======
+    path: 'confirm-book',
+    component: BookAnApointmentComponent,
+    title: 'Confirm Book',
+  },
+>>>>>>> f0080630de5db747df032090ffeb1736a8c5eb97
 ];
 
 @NgModule({

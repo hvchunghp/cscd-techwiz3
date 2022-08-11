@@ -15,7 +15,13 @@ import { HealthMeasuresComponent } from './components/health-measures/health-mea
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
+<<<<<<< HEAD
 import { QuestionComponent } from './components/question/question.component';
+=======
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BookAnApointmentComponent } from './components/book-an-apointment/book-an-apointment.component';
+>>>>>>> f0080630de5db747df032090ffeb1736a8c5eb97
 
 @NgModule({
   declarations: [
@@ -32,9 +38,18 @@ import { QuestionComponent } from './components/question/question.component';
     FeedbackComponent,
     ContactComponent,
     FooterComponent,
+<<<<<<< HEAD
     QuestionComponent,
+=======
+    BookAnApointmentComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    CarouselModule,
+    BrowserAnimationsModule,
+>>>>>>> f0080630de5db747df032090ffeb1736a8c5eb97
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,4 +1,4 @@
-<main class="home-header-banner d-flex row">
+<div class="home-header-banner d-flex">
     <div class="banner-content">
         <div class="content-up d-flex align-content-center row">
             <div class="title1">
@@ -16,7 +16,7 @@
         </div>
         <div class="content-down d-flex justify-content-center">
             <ul class="options row d-flex justify-content-center container">
-                <li class="row d-flex justify-content-center col-lg col-md-4 col-4" *ngFor="let item of homeOption.homeBanner">
+                <li class="row d-flex justify-content-center col-lg col-md-4 col-4" *ngFor="let item of home.homeBanner">
                     <i class="{{item.icon}}"></i>
                     <span>
                       {{item.option}}
@@ -25,4 +25,81 @@
             </ul>
         </div>
     </div>
-</main>
+</div>
+<div class="container py-5">
+    <owl-carousel-o [options]="slide">
+        <ng-template carouselSlide *ngFor="let item of home.homeSlide1">
+            <div class="slide px-2">
+                <a href="">
+                    <img src="{{item.image}}">
+                    <h5><b class="text-dark">{{item.title}}</b></h5>
+                    <div class="row" *ngFor="let item2 of item.description">
+                        <span class="text-dark">- {{item2.des}}</span>
+                    </div>
+                </a>
+            </div>
+        </ng-template>
+    </owl-carousel-o>
+</div>
+<div class="medical-online">
+    <div class="container py-5">
+        <h3>Remote consultation via video</h3>
+        <owl-carousel-o [options]="staticSlide">
+            <ng-template carouselSlide *ngFor="let item of home.homeSlide2">
+                <div class="slide pr-2">
+                    <a routerLink="">
+                        <i class="fa-regular fa-video"></i>
+                        <img src="{{item.image}}">
+                        <h5><span class="text-dark">{{item.title}}</span></h5>
+                    </a>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</div>
+<div class="specialist">
+    <div class="container py-5">
+        <h3>Popular specialties</h3>
+        <owl-carousel-o [options]="staticSlide">
+            <ng-template carouselSlide *ngFor="let item of home.homeSlide3">
+                <div class="slide pr-2">
+                    <a href="">
+                        <img src="{{item.image}}">
+                        <h5><span class="text-dark">{{item.title}}</span></h5>
+                    </a>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</div>
+<div class="outstanding-medical-facility">
+    <div class="container py-5">
+        <h3>Outstanding medical facility</h3>
+        <owl-carousel-o [options]="staticSlide">
+            <ng-template carouselSlide *ngFor="let item of home.homeSlide4">
+                <div class="slide pr-2">
+                    <a href="">
+                        <img src="{{item.image}}">
+                        <h5><span class="text-dark">{{item.title}}</span></h5>
+                    </a>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</div>
+<div class="container py-5 doctor">
+    <h3>Outstanding Doctor</h3>
+    <owl-carousel-o [options]="staticSlide">
+        <ng-template carouselSlide *ngFor="let item of home.homeSlide5">
+            <div class="slide">
+                <a href="" class="d-flex justify-content-center row">
+                    <div class="doc-img row text-center d-flex justify-content-center">
+                        <img src="{{item.image}}" class="p-2">
+                        <h6><span class="text-dark">{{item.title}}</span></h6>
+                        <span class="text-dark">{{item.des}}</span>
+                    </div>
+                </a>
+            </div>
+        </ng-template>
+    </owl-carousel-o>
+</div>

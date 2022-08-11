@@ -1,8 +1,10 @@
 <main class="appointments-container container pt-5">
     <div class="content-up">
         <div class="row">
-            <img src="../../../assets/images/doctor/doctor-phamhuubinh.jpg" alt="" class="col-3">
-            <div class="col-9 row">
+            <div class=" col-12 col-md-3 py-2 doc-img d-flex d-lg-block justify-content-center">
+                <img src="../../../assets/images/doctor/doctor-phamhuubinh.jpg" alt="">
+            </div>
+            <div class="col-12 col-md-9 row py-2 d-flex align-content-center doc-des px-4">
                 <h3>Associate Professor, PhD, Senior Lecturer Tran Huu Binh</h3>
                 <span>
                   Doctor specializing in Psychiatry, Psychiatry
@@ -21,20 +23,17 @@
                 <option value="2">After Tomorrow: {{timeAfterNextDay}}/{{timeMonth}}</option>
             </select>
         <div class="examination row">
-            <div class="examination-time col-6 pt-3">
+            <div class="examination-time col-12 col-md-6 pt-3">
                 <i class="fa-regular fa-calendar "></i>
                 <b>&ensp;EXAMINATION SCHEDULES</b>
                 <div class="choosing-time pt-3 row">
-                    <!-- <div class="grid-time col-3" *ngFor="let time of schedules.today">
-                        <a type="button " class="btn btn-warning m-1 "><b>{{time.time}}</b></a>
-                    </div> -->
                     <div class="grid-time col-3" *ngFor="let time of arr">
-                        <a type="button " class="btn btn-warning m-1 "><b>{{time.time}}</b></a>
+                        <a routerLink="/confirm-book" type="button " class="btn btn-warning m-1 "><b>{{time.time}}</b></a>
                     </div>
                     <span><b>Select <i class="fa-regular fa-hand-back-point-up"></i> and book (Scheduling fee 0 VND)</b></span>
                 </div>
             </div>
-            <div class="col-6 address-clinics pt-3">
+            <div class="col-12 col-md-6 address-clinics pt-3">
                 <p class="text-muted">
                     ADDRESS OF EXAMINATION
                 </p>

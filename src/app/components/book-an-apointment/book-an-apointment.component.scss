@@ -1,0 +1,88 @@
+a {
+    text-decoration: none;
+}
+
+.doc-info {
+    background-color: #f5f5f5;
+    img {
+        border-radius: 50%;
+        max-width: 200px;
+        min-width: 150px;
+        width: 25vw;
+        height: auto;
+    }
+    @media (max-width: 1000px) {
+        .book-details {
+            h4 {
+                font-size: 20px;
+            }
+            b {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.booking-input {
+    width: 100vw !important;
+    #book {
+        max-width: 700px;
+        min-width: 300px;
+        width: 70vw;
+        .price {
+            text-align: center;
+            display: inline-block;
+            border: 1px solid #eee;
+            background: #fff;
+            -moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            text-align: center;
+            padding: 10px;
+            margin: 9px 5px 9px 0;
+            cursor: pointer;
+        }
+        .input-form {
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            position: relative;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            i {
+                left: 0;
+                color: #666;
+                margin-left: 13px;
+                position: absolute;
+            }
+            input,
+            select {
+                border: none;
+                width: 100%;
+                outline: none !important;
+                display: table-cell;
+                background-color: #fff;
+                padding-left: 40px;
+            }
+            label {
+                margin-left: 25px;
+            }
+            select {
+                height: 58px;
+            }
+        }
+        .payment-details {
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+        .attention {
+            background-color: #d4effc;
+        }
+        button {
+            width: 100%;
+        }
+    }
+}
