@@ -17,6 +17,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BookAnApointmentComponent } from './components/book-an-apointment/book-an-apointment.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FeedbackComponent,
     ContactComponent,
     FooterComponent,
+    BookAnApointmentComponent,
   ],
   imports: [
     BrowserModule,

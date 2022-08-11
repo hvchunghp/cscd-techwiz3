@@ -15,9 +15,35 @@ export class HomeComponent implements OnInit {
     touchDrag: true,
     pullDrag: true,
     dots: false,
-    navSpeed: 500,
+    navSpeed: 1000,
     navText: ['previous', 'next'],
     autoplay: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      400: {
+        items: 2,
+      },
+      740: {
+        items: 3,
+      },
+      940: {
+        items: 4,
+      },
+    },
+    nav: false,
+  };
+
+  staticSlide: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: false,
+    navSpeed: 1000,
+    navText: ['previous', 'next'],
+    autoplay: false,
     responsive: {
       0: {
         items: 1,

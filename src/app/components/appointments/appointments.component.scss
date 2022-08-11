@@ -1,11 +1,15 @@
 .appointments-container {
     .content-up {
         .row {
-            img {
-                border-radius: 50%;
-                width: 170px;
-                height: 150px;
-                object-fit: cover;
+            .doc-img {
+                height: auto;
+                width: 100%;
+                img {
+                    border-radius: 50%;
+                    object-fit: cover;
+                    height: auto;
+                    width: 200px;
+                }
             }
         }
         select {

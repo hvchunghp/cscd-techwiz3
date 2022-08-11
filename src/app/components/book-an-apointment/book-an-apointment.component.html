@@ -1,0 +1,160 @@
+<div class="doc-info py-5">
+    <div class="d-flex container">
+        <div class="col-4 d-flex justify-content-center">
+            <img src="../../../assets/images/doctor/doctor-phamhuubinh.jpg" alt="" />
+        </div>
+        <div class="col-8 row d-flex align-content-center book-details">
+            <h4 class="text-muted py-1">BOOK AN APPOINTMENT</h4>
+            <a routerLink="/appointments">
+                <h4>
+                    <b class="text-primary py-1">Assoc., PhD, Senior Lecturer Tran Huu Binh</b
+          >
+        </h4>
+      </a>
+      <span class="text-muted py-1"><b>11:00 - 11:30</b></span>
+                    <span class="text-muted py-1"><b>
+          {{ timeDay }} - {{ timeDate }}/{{ timeMonth }}/{{ timeYear }}
+        </b></span
+      >
+    </div>
+  </div>
+</div>
+<div class="container booking-input py-5">
+  <div class="col-12 d-flex justify-content-start">
+    <form method="POST" id="book" action="">
+      <div>
+        <label class="price col-lg-4 col-md-5 col-12"><input
+            type="radio"
+            checked="checked"
+            name="price"
+            class="mr-1"/>
+            <span>Examination price</span>
+                    <div class="text-success">360.000đ</div>
+                    </label>
+                    <label class="price col-lg-4 col-md-5 col-12">
+          <input type="radio" name="price" class="mr-1" /><span
+            >Video consultation price</span
+          >
+          <div class="text-success">300.000đ</div></label
+        >
+      </div>
+      <div class="book-for">
+        <label
+          ><input
+            class="press"
+            type="radio"
+            name="book_for"
+            value="0"
+            dl-luu="book_for"
+            dl-name="bookfor"
+            dl-value="yourself"
+          />
+          Book for yourself</label
+        >
+        <label style="margin-left: 15px">
+          <input
+            class="press"
+            type="radio"
+            name="book_for"
+            value="1"
+            dl-luu="book_for"
+            dl-name="bookfor"
+            dl-value="another"
+          />
+          Book for another
+        </label>
+        </div>
+        <div class="input-form form-floating mb-3 mt-3">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" class="form-control" id="username" placeholder="." name="username" required />
+            <label for="username">First and last name (required)</label>
+        </div>
+        <div>
+            <label><input
+            class="press"
+            type="radio"
+            name="gender"
+            value="0"
+            dl-luu="gender"
+          />
+          Nam </label
+        ><label style="margin-left: 15px"
+          ><input
+            class="press"
+            type="radio"
+            name="gender"
+            value="1"
+            dl-luu="gender"
+          />
+          Nữ
+        </label>
+            <div class="dauvao-thongbao"></div>
+        </div>
+        <div class="input-form form-floating mb-3 mt-3">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" class="form-control" id="email" placeholder="." name="email" />
+            <label for="email">Email</label>
+        </div>
+        <div class="input-form form-floating mb-3 mt-3">
+            <i class="fa-solid fa-phone"></i>
+            <input type="tel" class="form-control" id="phone" #phone placeholder="." name="Phonenumber" required />
+            <span *ngIf="phone">vui long nhap phone</span>
+            <label for="phone">Phonenumber (required)</label>
+        </div>
+        <div class="input-form form-floating mb-3 mt-3">
+            <i class="fa-solid fa-calendar"></i>
+            <input type="date" class="form-control" id="birth" placeholder="." name="birth" required />
+            <label for="birth">Birthdate (required)</label>
+        </div>
+        <div class="input-form">
+            <i class="fa-solid fa-city"></i>
+            <select name="" id="city" name="city" required>
+              <option value="" disabled selected hidden>Shoose province/city</option>
+              <option value="">Ha Noi</option>
+              <option value="">Hai Phong</option>
+              <option value="">Da Nang</option>
+              <option value="">Ho Chi Minh city</option>
+            </select>
+        </div>
+        <div class="input-form form-floating mb-3 mt-3">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" class="form-control" id="address" placeholder="." name="address" />
+            <label for="address">Address</label>
+        </div>
+        <div class="input-form form-floating mb-3 mt-3">
+            <i class="fa-solid fa-question"></i>
+            <input type="text" class="form-control" id="reason" placeholder="." name="reason" />
+            <label for="reason">Medical examination reason</label>
+        </div>
+        <div class="payment-details row my-3 py-1">
+            <div class="row py-2">
+                <b class="col-6 d-flex justify-content-start">Giá khám</b>
+                <div class="text-success col-6 d-flex justify-content-end">360.000đ</div>
+            </div>
+            <div class="row py-2">
+                <b class="col-6 d-flex justify-content-start">Phí đặt lịch</b>
+                <div class="text-primary col-6 d-flex justify-content-end">Miễn phí</div>
+            </div>
+            <hr>
+            <div class="row py-2">
+                <b class="col-6 d-flex justify-content-start">Tổng cộng</b>
+                <div class="text-danger col-6 d-flex justify-content-end">360.000đ</div>
+            </div>
+        </div>
+        <div class="attention my-3 p-2">
+            <p><b>
+            Attention
+          </b></p>
+            <p>1. The information you provide will be used as medical examination records. So when filling out information, please note:</p>
+            <ul>
+                <li>Specify your first and last name, capitalize the first letters, for example: Tran Van Phu</li>
+                <li>Fill out completely, correctly and check the information again before pressing "Confirm booking"</li>
+            </ul>
+            <p>
+                2. Comply with regulations on epidemic prevention (wearing masks, disinfecting, declaring epidemiology) when visiting the clinic.
+            </p>
+        </div>
+        <button class="btn btn-warning" type="submit">Submit</button>
+        </form>
+    </div>
+</div>

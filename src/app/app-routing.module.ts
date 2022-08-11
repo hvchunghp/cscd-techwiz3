@@ -1,3 +1,4 @@
+import { BookAnApointmentComponent } from './components/book-an-apointment/book-an-apointment.component';
 import { AppointmentsComponent } from './components/appointments/appointments.component';
 import { SelfHealthTipsComponent } from './components/self-health-tips/self-health-tips.component';
 import { LoginComponent } from './components/login/login.component';
@@ -31,6 +32,11 @@ const routes: Routes = [
     path: 'contact',
     component: ContactComponent,
     title: 'Contact',
+  },
+  {
+    path: 'confirm-book',
+    component: BookAnApointmentComponent,
+    title: 'Confirm Book',
   },
 ];
 
