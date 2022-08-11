@@ -214,5 +214,70 @@
                 }
             ]
         }
+    ],
+    "col2": [{
+            "image": "../../assets/images/fac1.jpg",
+            "title": "Thu Cuc health system",
+            "subtitle": "Thu Cuc Health System TCI is proud to be a medical unit trusted by millions of people and recognized by the Department of Health.",
+            "desc": [{
+                    "content": "Gold Medal for Medical Services awarded by the Ministry of Health"
+                },
+                {
+                    "content": "TOP 3 private hospitals with leading quality scores in Hanoi"
+                },
+                {
+                    "content": "TOP 5 hospitals with the highest quality score"
+                },
+                {
+                    "content": "99% of customers rate satisfaction according to the grading scale of the Department of Health"
+                }
+            ]
+        },
+        {
+            "image": "../../assets/images/fac2.jpg",
+            "title": "Bach Mai Hospital"
+        },
+        {
+            "image": "../../assets/images/fac3.jpg",
+            "title": "Central Traditional Medicine Hospital"
+        },
+        {
+            "image": "../../assets/images/fac4.jpg",
+            "title": "Viet - Tiep Friendship Hospital"
+        },
+        {
+            "image": "../../assets/images/fac5.png",
+            "title": "Vinmec international hospital"
+        },
+        {
+            "image": "../../assets/images/fac6.jpg",
+            "title": "Central Cancer Hospital"
+        }
+    ],
+    "col3": [{
+            "image": "../../assets/images/doctor/doc1.jpg",
+            "title": "Specialist Doctor II Tran Minh Khuyen",
+            "des": "Mental health, Counseling, Psychotherapy"
+        },
+        {
+            "image": "../../assets/images/doctor/doctor-phamhuubinh.jpg",
+            "title": "Assoc., PhD, Senior Lecturer Tran Huu Binh",
+            "des": "Mental health"
+        },
+        {
+            "image": "../../assets/images/doctor/doc2.jpg",
+            "title": "Specialist Doctor II Tran Thi Hoai Huong",
+            "des": "Dermatology"
+        },
+        {
+            "image": "../../assets/images/doctor/doc3.jpg",
+            "title": "Associate Professor, Doctor Nguyen Thi Hoai An",
+            "des": "Mental health, Counseling, Psychotherapy"
+        },
+        {
+            "image": "../../assets/images/doctor/doc4.jpg",
+            "title": "Doctor, Pham Chi Lang",
+            "des": "Musculoskeletal, Orthopedic trauma"
+        }
     ]
 }
