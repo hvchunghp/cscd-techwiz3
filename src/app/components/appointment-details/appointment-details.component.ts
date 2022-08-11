@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import appointmentDetails from "../../../assets/data/appointment-details.json"
 
 @Component({
   selector: 'app-appointment-details',
@@ -6,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./appointment-details.component.scss']
 })
 export class AppointmentDetailsComponent implements OnInit {
+  displayMode = "upcoming";
 
+  data = appointmentDetails;
   constructor() { }
 
   ngOnInit(): void {
