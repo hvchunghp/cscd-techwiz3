@@ -63,15 +63,15 @@ a {
                 border: none;
                 width: 100%;
                 outline: none !important;
-                display: table-cell;
                 background-color: #fff;
                 padding-left: 40px;
+                height: 58px;
             }
             label {
                 margin-left: 25px;
             }
             select {
-                height: 58px;
+                margin-right: 10px;
             }
         }
         .payment-details {

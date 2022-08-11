@@ -15,6 +15,7 @@ import { HealthMeasuresComponent } from './components/health-measures/health-mea
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { QuestionComponent } from './components/question/question.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BookAnApointmentComponent } from './components/book-an-apointment/book-an-apointment.component';
@@ -34,6 +35,7 @@ import { BookAnApointmentComponent } from './components/book-an-apointment/book-
     FeedbackComponent,
     ContactComponent,
     FooterComponent,
+    QuestionComponent,
     BookAnApointmentComponent,
   ],
   imports: [

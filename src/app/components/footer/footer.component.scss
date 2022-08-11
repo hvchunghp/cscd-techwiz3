@@ -1,5 +1,6 @@
 footer {
-    width: 100vw;
+    overflow-x: hidden !important;
+    width: 100% !important;
 }
 
 .footer-basic {
@@ -21,7 +22,7 @@ footer {
 }
 
 .center {
-    line-height: 2;
+    line-height: 1.5;
     font-size: 20px;
     padding-left: 30px;
     a {
@@ -33,11 +34,11 @@ footer {
 .last {
     padding-left: 0;
     line-height: 2;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .social-network {
-    padding: 10px 0 0 50px;
+    padding: 10px 0 0 40px;
     a {
         padding-left: 20px;
         i {

@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './components/contact/contact.component';
+import { QuestionComponent } from './components/question/question.component';
 
 const routes: Routes = [
   {
@@ -34,6 +35,11 @@ const routes: Routes = [
     title: 'Contact',
   },
   {
+  path: 'question',
+  component: QuestionComponent,
+  title: 'Question',
+  },
+{
     path: 'confirm-book',
     component: BookAnApointmentComponent,
     title: 'Confirm Book',

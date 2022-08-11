@@ -1,0 +1,15 @@
+{
+    "bigQuestion": [
+        {
+            "questionOne" : "ABOUT US"
+        },
+        {
+            "questionOne" : "USER MANUAL"
+        }
+    ],
+    "smallQuestion": [
+        {
+            "questionOne" : "What is BookingCare?"
+        }
+    ]
+}

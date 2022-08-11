@@ -1,5 +1,5 @@
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 header {
@@ -37,16 +37,19 @@ li {
             }
         }
         .left-content {
-            i {
+            .open-offcanvas {
                 font-size: 20px;
                 color: grey;
-                cursor: pointer;
+                border: none;
+                outline: none;
+                background: transparent;
             }
             a {
+                width: fit-content;
+                position: relative;
                 img {
                     height: 50px;
                     width: auto;
-                    padding: 0 20px;
                 }
             }
         }
@@ -60,6 +63,37 @@ li {
             .userLogin {
                 padding-left: 15px;
             }
+        }
+    }
+}
+
+#subHeader {
+    width: 270px;
+}
+
+.offcanvas-body {
+    font-size: 1rem;
+    padding: 0 !important;
+    ul {
+        padding: 0;
+        li {
+            border-bottom: 1px #eee solid;
+            padding: 10px 15px;
+            a {
+                color: #3498db;
+            }
+            a:hover {
+                color: rgb(61, 201, 61) !important;
+            }
+        }
+    }
+    .about {
+        padding: 10px 0;
+        background-color: #eee;
+        .about-us {
+            width: 100vw;
+            padding: 10px 15px;
+            opacity: 50%;
         }
     }
 }

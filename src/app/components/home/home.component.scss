@@ -22,6 +22,10 @@ a {
             height: 80%;
             @media (max-width: 1000px) {
                 height: 50%;
+                .title1,
+                .title2 {
+                    font-size: 22px !important;
+                }
             }
             .title1,
             .title2 {
