@@ -1,0 +1,20 @@
+<div class="container">
+    <img src="https://benhvienvanhanh.com/wp-content/uploads/2022/01/20190515_023832_291922_chi-so-BMI-gay-beo.max-1800x1800-1.jpg" alt="">
+    <div class="row">
+        <div class="col-6">
+            <label for="cannang"><span class="fw-bold">Nhập cân nặng</span><span>(Kg)</span></label>
+            <input class=" w-100 p-1" type="text" [(ngModel)]="info.cannang" pattern="\d*" #cn maxlength="3" #kg placeholder="Nhap Can nang">
+            <p style="color:Red" *ngIf="info.cn">Vui lòng nhập cân nặng</p>
+            <label for="chieucao"><span class="fw-bold">Nhập chiều cao</span><span>(Cm)</span></label>
+            <input class="w-100 p-1" [(ngModel)]="info.chieucao" type="text" pattern="\d*" #cc maxlength="3" #kg placeholder="Nhap Chieu Cao">
+            <p style="color:Red" *ngIf="info.cc">Vui lòng nhập chiều cao</p>
+        </div>
+        <div class="col-6">
+            <h2 class=" ">Kết quả</h2>
+            <p *ngIf="bmi">Theo nghiên cứu của WHO kết quả BMI của bạn là: <span class=" fw-bold">{{kqBMI|number}}</span></p>
+            <span>{{bmi}}</span>
+        </div>
+    </div>
+    <br>
+    <button type="button" class="btn bg-primary text-light" #kq (click)="ketqua()">View Result</button>
+</div>
