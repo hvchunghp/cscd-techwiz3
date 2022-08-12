@@ -1,1 +1,4 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css");
+body {
+    min-height: calc(100vh - 297px);
+}
