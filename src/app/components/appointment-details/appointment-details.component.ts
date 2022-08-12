@@ -8,8 +8,14 @@ import appointmentDetails from "../../../assets/data/appointment-details.json"
 })
 export class AppointmentDetailsComponent implements OnInit {
   displayMode = "upcoming";
-
   data = appointmentDetails;
+  alertFeedback() {
+    alert("Your feedback has been sent");
+  };
+  alertCancel() {
+    alert("Your have cancelled the appointment")
+  }
+
   constructor() { }
 
   ngOnInit(): void {
