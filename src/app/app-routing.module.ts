@@ -1,3 +1,4 @@
+import { NerveComponent } from './components/nerve/nerve.component';
 import { AppointmentDetailsComponent } from './components/appointment-details/appointment-details.component';
 import { BookAnApointmentComponent } from './components/book-an-apointment/book-an-apointment.component';
 import { AppointmentsComponent } from './components/appointments/appointments.component';
@@ -43,6 +44,10 @@ const routes: Routes = [
   {
     path: 'appointment-detail',
     component: AppointmentDetailsComponent,
+  },
+  {
+    path: 'specialist-detail',
+    component: NerveComponent,
   },
 ];
 

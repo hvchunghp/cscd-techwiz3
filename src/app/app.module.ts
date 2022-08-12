@@ -1,4 +1,3 @@
-import { PopUpChatComponent } from './components/pop-up-chat/pop-up-chat.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -20,7 +19,9 @@ import { QuestionComponent } from './components/question/question.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BookAnApointmentComponent } from './components/book-an-apointment/book-an-apointment.component';
-
+import { NerveComponent } from './components/nerve/nerve.component';
+import { PopUpChatComponent } from './components/pop-up-chat/pop-up-chat.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,12 +40,14 @@ import { BookAnApointmentComponent } from './components/book-an-apointment/book-
     QuestionComponent,
     BookAnApointmentComponent,
     PopUpChatComponent,
+    NerveComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
     BrowserAnimationsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
