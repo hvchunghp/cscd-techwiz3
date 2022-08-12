@@ -21,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BookAnApointmentComponent } from './components/book-an-apointment/book-an-apointment.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BMIComponent } from './components/bmi/bmi.component';
+import { MedicationsComponent } from './components/medications/medications.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { BMIComponent } from './components/bmi/bmi.component';
     FooterComponent,
     QuestionComponent,
     BookAnApointmentComponent,
-    BMIComponent
+    BMIComponent,
+    MedicationsComponent
   ],
   imports: [
     BrowserModule,
