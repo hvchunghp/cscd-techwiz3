@@ -23,6 +23,8 @@ import { NerveComponent } from './components/nerve/nerve.component';
 import { PopUpChatComponent } from './components/pop-up-chat/pop-up-chat.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BMIComponent } from './components/bmi/bmi.component';
+import { MedicationsComponent } from './components/medications/medications.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +42,8 @@ import { BMIComponent } from './components/bmi/bmi.component';
     FooterComponent,
     QuestionComponent,
     BookAnApointmentComponent,
+    BMIComponent,
+    MedicationsComponent,
     PopUpChatComponent,
     NerveComponent,
     BMIComponent

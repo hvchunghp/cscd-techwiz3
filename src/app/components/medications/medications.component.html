@@ -1,0 +1,124 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 right">
+            <h3 class="title"><b>MEDICATIONS & MEDICAL INSTRUMENTS NEEDED IN THE HOUSEHOLD PHARMACY</b></h3>
+            <hr>
+            <p class="content">We all know that every family should have a spare medicine cabinet for necessary
+                health-related cases, but not everyone knows what to prepare for adequate and appropriate. CarePlus will
+                help you with the medicines and medical supplies you need in your medicine cabinet!</p>
+            <p><img src="../../../assets/images/thuoc.jpg" width="700px"></p>
+            <p class="clock"><i class="fa-solid fa-clock"></i> 22/10/2020 9:11:32 SA</p>
+            <div class=" col-7">
+                <button class="datlich">Make an appointment to see a doctor</button>
+            </div>
+            <br><br><br><br><br><br>
+            <h4><b>MEDICATIONS NEEDED</b></h4>
+            <div class="noidung" *ngFor="let a of home.need">
+                <h5><b>{{a.title}}</b></h5>
+                <ul>
+                    <li>{{a.content1}}</li>
+                    <li>{{a.content2}}</li>
+                    <li>{{a.content3}}</li>
+                </ul>
+            </div>
+            <h4><b>MEDICAL SUPPLY NEEDED</b></h4>
+            <div class="noidung-2" *ngFor="let a of home.vatdung">
+                <h5><b>{{a.title}}</b></h5>
+                <p>{{a.content}}</p>
+            </div>
+
+            <b>------</b>
+            <p>In order to help customers feel secure in taking care of their health during the period of social
+                distancing due to the COVID-19 epidemic, CarePlus implements a program of remote consultation with a
+                team of doctors in specialties (cardiology, paediatrics, paediatrics and cardiology). , Obstetrics and
+                Gynecology, Otolaryngology, Dermatology, ...).
+                <span><b>Register</b><a routerLink=""> HERE</a></span>
+            </p>
+            <iframe width="650" height="315" src="https://www.youtube.com/embed/OSfuXv7CYoU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="share">
+                <p>Please share with us</p>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-square-facebook fb"></i>
+                <i class="fa-brands fa-square-google-plus"></i>
+            </div>
+                <b>0 Comments</b>
+                <div class="sortby">
+                    Sort by
+                    <select id="" name="cityCode" onchange="changeCity();">
+                        <option value="newest">Newest</option>
+                        <option value="oldest">Oldest</option>
+                    </select>
+                </div>
+                <div class="d-flex pt-3 cmt">
+                    <div class="w-25">
+                        <img witdh="70px" height="70px" src="../../../assets/images/avatar.jpg">
+                    </div>
+                    <div class="w-75">
+                        <input class="john" type="text" name="comment" placeholder="Add a comment">
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-4 left">
+            <h5><b>RECENT/NEW ARTICLES</b></h5>
+            <hr>
+            <div class="d-flex row-one mb-2">
+                <div class="w-25">
+                    <div routerLink=""><img witdh="80px" height="82px"
+                            src="https://careplusvn.com/Uploads/t/ca/cac-giai-doan-da-day-vi_0007613_710.jpeg"></div>
+                </div>
+                <div class="viemloet w-75 ml-2">
+                    <a routerLink="">Stages against high resistance class</a>
+                    <p>Gastric ulcer is divided into 2 stages..</p>
+                    <p>By <b>BS. CK2. Hồ Thị Vân Hằng</b></p>
+                </div>
+            </div>
+            <div class="d-flex row-one mb-2">
+                <div class="w-25">
+                    <div routerLink=""><img witdh="80px" height="82px"
+                            src="https://careplusvn.com/Uploads/t/uo/uong-sua-lam-day-thi-som-vi_0007607_710.jpeg"></div>
+                </div>
+                <div class="viemloet w-75 ml-2">
+                    <a routerLink="">Drinking a lot of milk makes children puberty early?</a>
+                    <p>Early puberty is a concern for parents..</p>
+                    <p>By <b>BS. CK1. Lại Thị Bích Thủy</b></p>
+                </div>
+            </div>
+            <div class="d-flex row-one mb-2">
+                <div class="w-25">
+                    <div routerLink=""><img witdh="80px" height="82px"
+                            src="https://careplusvn.com/Uploads/t/fb/fb-nhung-ai-nen-di-kiem-tra-dai-thao-duong_0007579_710.png">
+                    </div>
+                </div>
+                <div class="viemloet w-75 ml-2">
+                    <a routerLink="">Who should get tested for diabetes?</a>
+                    <p>In Vietnam, more than 50% of diseases..</p>
+                    <p>By <b>THS. BS. Nguyễn Sĩ Phương Thảo</b></p>
+                </div>
+            </div>
+            <div class="d-flex row-one mb-2">
+                <div class="w-25">
+                    <div routerLink=""><img witdh="80px" height="82px"
+                            src="https://careplusvn.com/Uploads/t/fb/fb-dau-hieu-hoai-tu-xuong-sau-covid19-vn_0007581_710.png">
+                    </div>
+                </div>
+                <div class="viemloet w-75 ml-2">
+                    <a routerLink="">Warning signs of bone necrosis after COVID</a>
+                </div>
+            </div>
+            <div class="d-flex row-one mb-2">
+                <div class="w-25">
+                    <div routerLink=""><img witdh="80px" height="82px"
+                            src="https://careplusvn.com/Uploads/t/cu/cum-a-tang-nhanh-vi_0007577_710.jpeg"></div>
+                </div>
+                <div class="viemloet w-75 ml-2">
+                    <a routerLink="">The number of Influenza A cases has increased abnormally. What should parents pay
+                        attention to?</a>
+                    <p>By <b>BS. CK2. Hồ Thị Vân Hằng</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

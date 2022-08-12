@@ -1,0 +1,57 @@
+{
+    "need": [{
+        "title": "1 .Antipyretic, anti-inflammatory drugs",
+        "content1": "The commonly used antipyretic and anti-inflammatory drugs are Paracetamol (Tylenol, Hapacol, Efferalgant...) or Ibuprofen, Mobic, etc.",
+        "content2": "Stock up on some paracetamol tablets (for adults) and powder if you have young children.",
+        "content3": "When using antipyretic drugs, it is necessary to pay attention to the dosage because overdose can cause poisoning, and should not use many antipyretic drugs in a fever."
+    },
+    {
+        "title": "2. Painkillers",
+        "content1": "Also Paracetamol or Alexan drugs,…",
+        "content2": "Topical gels such as Salonpas, pain relief patches.",
+        "content3": "Hot and cold packs: help relieve abdominal pain, reduce swelling, and reduce fever."
+    },
+    {
+        "title": "3. Digestive medicine",
+        "content1": "Oresol is used to rehydrate in case of diarrhea (pay attention to the correct ratio as directed to avoid poisoning).",
+        "content2": "Motilium M is used in cases of flatulence and indigestion.",
+        "content3": "Smecta, Becberin for diarrhea."
+    },
+    {
+        "title": "4. Dermatology drugs",
+        "content1": "For this drug, it is possible to reserve Pantenol cream or spray, which is one of the effective dermatological drugs for burns. Using Pantenol immediately after a minor burn helps to prevent the burn from blistering.",
+        "content2": "Eurax ointment is used in case of mosquito or insect bites.",
+        "content3": "Anti-allergic drugs such as Loratadine tablets or syrup (for children) are used in case of acute rashes or hives."
+    },
+    {
+        "title": "5. Antiseptic",
+        "content1": "Alcohol 90° to disinfect skin wounds",
+        "content2": "Betadine: used to disinfect the skin for skin lesions such as minor scratches or bleeding. The drug has an anti-infective effect. In addition, Betadine is used to disinfect lesions in the mucous membranes of the lips and mouth.",
+        "content3": "Hydrogen peroxide: used to wash new wounds"
+    },
+    {
+        "title": "6. Physiological saline",
+        "content1": "Alcohol 90° to disinfect skin woundsClean eyes and nose daily after traveling with a lot of dirt or at a time of many epidemics.",
+        "content2": "Drop your eyes and nose after swimming.",
+        "content3": "Cleaning the nose in some cases of common cold or viral fever."
+    }
+    ],
+    "vatdung": [
+        {
+            "title": "1. Thermocouple",
+            "content": "Used to measure body temperature in case of fever. Fever temperature is very important for doctors in diagnosing the exact cause of fever."
+        },
+        {
+            "title": "2. Blood pressure monitor",
+            "content": "This tool is indispensable if there are elderly people in the family or people with blood pressure and heart diseases."
+        },
+        {
+            "title": "3. Cotton swabs, medical gauze bandages",
+            "content": "Used for cleaning and dressing wounds. For cotton, it should be cut (with clean scissors) into pieces for convenience."
+        },
+        {
+            "title": "4. Clean scissors",
+            "content": "Used to cut cotton, bandages, gauze."
+        }
+    ]
+}
