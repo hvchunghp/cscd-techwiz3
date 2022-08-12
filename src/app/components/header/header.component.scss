@@ -81,6 +81,7 @@ li {
         li {
             border-bottom: 1px #eee solid;
             padding: 10px 15px;
+            cursor: pointer;
             a {
                 color: #3498db;
             }
@@ -88,6 +89,10 @@ li {
                 color: rgb(61, 201, 61) !important;
             }
         }
+    }
+    img {
+        height: 250px;
+        object-fit: contain;
     }
     .about {
         padding: 10px 0;

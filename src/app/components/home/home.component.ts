@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import home from '../../../assets/data/home.json';
 import { OwlOptions } from 'ngx-owl-carousel-o/lib/models/owl-options.model';
-
+import dataForAll from '../../../assets/data/dataForAll.json';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -9,6 +9,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o/lib/models/owl-options.model';
 })
 export class HomeComponent implements OnInit {
   home = home;
+  dataForAll = dataForAll;
   slide: OwlOptions = {
     loop: true,
     mouseDrag: true,
@@ -36,7 +37,7 @@ export class HomeComponent implements OnInit {
   };
 
   staticSlide: OwlOptions = {
-    loop: true,
+    loop: false,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,

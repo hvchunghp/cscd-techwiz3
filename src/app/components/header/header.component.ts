@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import header from '../../../assets/data/header.json';
+import dataForAll from '../../../assets/data/dataForAll.json';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +7,7 @@ import header from '../../../assets/data/header.json';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  header = header;
+  header = dataForAll;
 
   constructor() {}
 

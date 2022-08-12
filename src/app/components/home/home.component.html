@@ -33,15 +33,15 @@
                 <a routerLink="">
                     <img src="{{item.image}}">
                     <h5><b class="text-dark">{{item.title}}</b></h5>
-                    <div class="row" *ngFor="let item2 of item.description">
-                        <span class="text-dark">- {{item2.des}}</span>
+                    <div *ngFor="let item2 of item.description">
+                        <p class="text-dark">- {{item2.des}}</p>
                     </div>
                 </a>
             </div>
         </ng-template>
     </owl-carousel-o>
 </div>
-<div class="medical-online">
+<div class="grey-row medical-online">
     <div class="container py-5">
         <h3>Remote consultation via video</h3>
         <owl-carousel-o [options]="staticSlide">
@@ -57,26 +57,24 @@
         </owl-carousel-o>
     </div>
 </div>
-<div class="specialist">
-    <div class="container py-5">
-        <h3>Popular specialties</h3>
-        <owl-carousel-o [options]="staticSlide">
-            <ng-template carouselSlide *ngFor="let item of home.homeSlide3">
-                <div class="slide pr-2">
-                    <a routerLink="">
-                        <img src="{{item.image}}">
-                        <h5><span class="text-dark">{{item.title}}</span></h5>
-                    </a>
-                </div>
-            </ng-template>
-        </owl-carousel-o>
-    </div>
+<div class="container py-5">
+    <h3>Popular specialties</h3>
+    <owl-carousel-o [options]="staticSlide">
+        <ng-template carouselSlide *ngFor="let item of dataForAll.specialist">
+            <div class="slide pr-2">
+                <a routerLink="">
+                    <img src="{{item.image}}">
+                    <h5><span class="text-dark">{{item.title}}</span></h5>
+                </a>
+            </div>
+        </ng-template>
+    </owl-carousel-o>
 </div>
-<div class="outstanding-medical-facility">
+<div class="grey-row">
     <div class="container py-5">
         <h3>Outstanding medical facility</h3>
         <owl-carousel-o [options]="staticSlide">
-            <ng-template carouselSlide *ngFor="let item of home.homeSlide4">
+            <ng-template carouselSlide *ngFor="let item of dataForAll.clinics">
                 <div class="slide pr-2">
                     <a routerLink="">
                         <img src="{{item.image}}">
@@ -90,16 +88,34 @@
 <div class="container py-5 doctor">
     <h3>Outstanding Doctor</h3>
     <owl-carousel-o [options]="staticSlide">
-        <ng-template carouselSlide *ngFor="let item of home.homeSlide5">
+        <ng-template carouselSlide *ngFor="let item of dataForAll.doctor">
             <div class="slide">
                 <a routerLink="appointments" class="d-flex justify-content-center row">
                     <div class="doc-img row text-center d-flex justify-content-center">
                         <img src="{{item.image}}" class="p-2">
-                        <h6><span class="text-dark">{{item.title}}</span></h6>
-                        <span class="text-dark">{{item.des}}</span>
+                        <h6><b class="text-dark">{{item.title}}</b></h6>
+                        <span class="text-dark">{{item.subTitle}}</span>
                     </div>
                 </a>
             </div>
         </ng-template>
     </owl-carousel-o>
+</div>
+<div class="grey-row py-1">
+    <div class="container">
+        <h3 class="text-center">Health handbook</h3>
+        <div class="row py-5">
+            <a routerLink="{{item.link}}" class="col-6 row" *ngFor="let item of home.handbook">
+                <img src="{{item.image}}" alt="">
+                <h4>
+                    <p class="text-dark">
+                        {{item.title}}
+                    </p>
+                </h4>
+                <p class="text-muted">
+                    {{item.subtitle}}
+                </p>
+            </a>
+        </div>
+    </div>
 </div>
