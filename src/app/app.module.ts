@@ -1,3 +1,4 @@
+import { PopUpChatComponent } from './components/pop-up-chat/pop-up-chat.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -37,6 +38,7 @@ import { BookAnApointmentComponent } from './components/book-an-apointment/book-
     FooterComponent,
     QuestionComponent,
     BookAnApointmentComponent,
+    PopUpChatComponent,
   ],
   imports: [
     BrowserModule,
