@@ -234,16 +234,13 @@
             "title": "Specialist Doctor II Tran Minh Khuyen",
             "subTitle": "Mental health, Counseling, Psychotherapy",
             "desc": [{
-                    "content": "The title of People's Doctor"
+                    "content": "Former Head of Clinical Department, Psychiatric Disease Ho Chi Minh City"
                 },
                 {
-                    "content": "Doctor specializing in Psychiatry, Psychiatry"
+                    "content": "Graduated in Psychotherapy, Paris School of Practical Psychology (Paris Practical Psychology)"
                 },
                 {
-                    "content": "Former Director of the National Institute of Mental Health, Bach Mai Hospital"
-                },
-                {
-                    "content": "Former Vice Dean of the Department of Psychiatry, Hanoi Medical University"
+                    "content": "Doctor admits 16 years old and older"
                 }
             ],
             "status": "Busy",
@@ -272,17 +269,56 @@
         {
             "image": "../../assets/images/doctor/doc2.jpg",
             "title": "Specialist Doctor II Tran Thi Hoai Huong",
-            "subTitle": "Dermatology"
+            "subTitle": "Dermatology",
+            "desc": [{
+                    "content": "Head of Nutrition Department of Dermatology Hospital in Ho Chi Minh City. Ho Chi Minh City"
+                },
+                {
+                    "content": "Dr. Huong has more than 20 years of experience in examining and treating dermatological diseases"
+                },
+                {
+                    "content": "Doctors accept all ages"
+                }
+            ],
+            "status": "Free",
+            "subClass": "text-success"
         },
         {
             "image": "../../assets/images/doctor/doc3.jpg",
             "title": "Associate Professor, Doctor Nguyen Thi Hoai An",
-            "subTitle": "Mental health, Counseling, Psychotherapy"
+            "subTitle": "Mental health, Counseling, Psychotherapy",
+            "desc": [{
+                "content": "Associate Professor, Doctor of Otolaryngology"
+            },
+            {
+                "content": "Former Head of Children's Otolaryngology Department, National Hospital of Otolaryngology"
+            },
+            {
+                "content": "Over 25 years working at the Central Ear Nose Throat Hospital"
+            },
+            {
+                "content": "Resident Doctor specializing in Ear, Nose and Throat"
+            },
+            {
+                "content": "Doctor who trained in the French Republic in Ear, Nose and Throat"
+            }
+        ],
+            "status": "Busy",
+            "subClass": "text-danger"
         },
         {
             "image": "../../assets/images/doctor/doc4.jpg",
             "title": "Doctor, Pham Chi Lang",
-            "subTitle": "Musculoskeletal, Orthopedic trauma"
+            "subTitle": "Musculoskeletal, Orthopedic trauma",
+            "desc": [{
+                "content": "Over 30 years of experience in the field of Orthopedic Trauma"
+            },
+            {
+                "content": "Lecturer at many famous medical universities such as: Ho Chi Minh City University of Medicine and Pharmacy, Pham Ngoc Thach Medical University, Faculty of Medicine, Vietnam National University Ho Chi Minh City,..."
+            }
+        ],
+            "status": "Free",
+            "subClass": "text-success"
         }
     ]
 }
