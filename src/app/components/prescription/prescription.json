@@ -1,3 +1,45 @@
 {
-    "medical_facility": ["CS KCB-1", "CS KCB-2", "CSS KCB-3", "CS KCB-4"]
+    "medical_facility": [{
+            "stt": "1",
+            "name": "Amoxicilin+Sulbactam(SUMAKIN)",
+            "dang": " 30 packs",
+            "doituong": "Childrent",
+            "CSD": "Drink 3 times a day, 2 packs each time(morning, noon, afternoon)",
+            "date": "10"
+        },
+        {
+            "stt": "2",
+            "name": "Salbutamol sulface,Bromhexin HCL(SALMODIL)",
+            "dang": "1 bottle",
+            "doituong": "Childrent",
+            "CSD": "Drink 3 times a day, 3 ml each time(morning, noon, afternoon)",
+            "date": "10"
+        },
+        {
+            "stt": "3",
+            "name": "Levocetirizine(1-AL 15mg/30ml)",
+            "dang": "1 bottle",
+            "doituong": "Childrent",
+            "CSD": "Drink 1 times a day, 3.5 ml each time(evenings)",
+            "date": "10"
+        },
+        {
+            "stt": "4",
+            "name": "Prednisolon(PREDNISOLON 5mg)",
+            "dang": "6 pill",
+            "doituong": "Childrent",
+            "CSD": "Drink 2 times a day, 1 pill each time(morning, afternoon)",
+            "date": "3"
+        },
+        {
+            "stt": "5",
+            "name": "Ventolin+Pulmicort+Natriclirua",
+            "dang": "ads",
+            "doituong": "Childrent",
+            "CSD": "Throat steaming 1 times(morning) ",
+            "date": "1"
+        }
+    ],
+    "medical_name": ["CS TY-1", "CS TY-2", "CS TY-3", "CS TY-4", "CS TY-5"]
+
 }

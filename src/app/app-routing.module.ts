@@ -10,6 +10,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './components/contact/contact.component';
 import { QuestionComponent } from './components/question/question.component';
+import { PrescriptionComponent } from './components/prescription/prescription.component';
 
 const routes: Routes = [
   {
@@ -45,14 +46,22 @@ const routes: Routes = [
   {
     path: 'appointment-detail',
     component: AppointmentDetailsComponent,
+    title: 'Appointment Detail',
   },
   {
     path: 'specialist-detail',
     component: NerveComponent,
+    title: 'Specialist Detail',
   },
   {
-    path: 'bmi',
+    path: 'prescription',
+    component: PrescriptionComponent,
+    title: 'Prescription',
+  },
+  {
+    path: 'personal-health',
     component: BMIComponent,
+    title: 'Personal health',
   },
 ];
 

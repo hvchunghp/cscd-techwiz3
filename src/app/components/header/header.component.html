@@ -19,7 +19,7 @@
                         <li data-bs-toggle="offcanvas" data-bs-target="#facilities"><a>Health facilities</a></li>
                         <li data-bs-toggle="offcanvas" data-bs-target="#doctors"><a>Doctor</a></li>
                         <li><a routerLink="/prescription" data-bs-dismiss="offcanvas">Prescription</a></li>
-                        <li><a routerLink="/bmi" data-bs-dismiss="offcanvas">BMI</a></li>
+                        <li><a routerLink="/personal-health" data-bs-dismiss="offcanvas">Personal health</a></li>
                     </ul>
                     <div class="about">
                         <b class="about-us">About us</b>
@@ -78,7 +78,7 @@
     </div>
     <div class="offcanvas-body row ">
         <div class="col-12 px-5 " *ngFor="let item of header.specialist ">
-            <a routerLink="/specialist-detail" class="row p-3 " style="border-top: 1px solid black ">
+            <a routerLink="/specialist-detail" class="row p-3 " style="border-top: 1px solid black " data-bs-dismiss="offcanvas">
                 <img data-src="{{item.image}} " class="col-lg-3 col-md-12 col-12 ">
                 <div class="col-lg-9 col-md-12 col-12 ">
                     <h3>{{item.title}}</h3>
@@ -99,7 +99,7 @@
     </div>
     <div class="offcanvas-body row ">
         <div class="col-12 px-5 " *ngFor="let item of header.clinics ">
-            <a href=" " class="row p-3 " style="border-top: 1px solid black ">
+            <a routerLink="/specialist-detail" class="row p-3 " style="border-top: 1px solid black " data-bs-dismiss="offcanvas">
                 <img data-src="{{item.image}} " class="col-lg-3 col-md-12 col-12 ">
                 <div class="col-lg-9 col-md-12 col-12 ">
                     <h3>{{item.title}}</h3>
@@ -122,7 +122,7 @@
     </div>
     <div class="offcanvas-body row ">
         <div class="col-12 px-5 " *ngFor="let item of header.doctor ">
-            <a href=" " class="row p-3 " style="border-top: 1px solid black ">
+            <a routerLink="/specialist-detail" class="row p-3 " style="border-top: 1px solid black " data-bs-dismiss="offcanvas">
                 <img data-src="{{item.image}} " class="col-lg-3 col-md-12 col-12 ">
                 <div class="col-lg-9 col-md-12 col-12 ">
                     <h3>{{item.title}}</h3>
