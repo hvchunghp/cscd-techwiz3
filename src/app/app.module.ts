@@ -19,6 +19,8 @@ import { QuestionComponent } from './components/question/question.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BookAnApointmentComponent } from './components/book-an-apointment/book-an-apointment.component';
+import { NerveComponent } from './components/nerve/nerve.component';
+import { PopUpChatComponent } from './components/pop-up-chat/pop-up-chat.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BMIComponent } from './components/bmi/bmi.component';
 import { MedicationsComponent } from './components/medications/medications.component';
@@ -41,7 +43,10 @@ import { MedicationsComponent } from './components/medications/medications.compo
     QuestionComponent,
     BookAnApointmentComponent,
     BMIComponent,
-    MedicationsComponent
+    MedicationsComponent,
+    PopUpChatComponent,
+    NerveComponent,
+    BMIComponent
   ],
   imports: [
     BrowserModule,

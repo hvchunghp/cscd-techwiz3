@@ -2,19 +2,26 @@
     <img src="https://benhvienvanhanh.com/wp-content/uploads/2022/01/20190515_023832_291922_chi-so-BMI-gay-beo.max-1800x1800-1.jpg" alt="">
     <div class="row">
         <div class="col-6">
-            <label for="cannang"><span class="fw-bold">Nhập cân nặng</span><span>(Kg)</span></label>
-            <input class=" w-100 p-1" type="text" [(ngModel)]="info.cannang" pattern="\d*" #cn maxlength="3" #kg placeholder="Nhap Can nang">
-            <p style="color:Red" *ngIf="info.cn">Vui lòng nhập cân nặng</p>
-            <label for="chieucao"><span class="fw-bold">Nhập chiều cao</span><span>(Cm)</span></label>
-            <input class="w-100 p-1" [(ngModel)]="info.chieucao" type="text" pattern="\d*" #cc maxlength="3" #kg placeholder="Nhap Chieu Cao">
-            <p style="color:Red" *ngIf="info.cc">Vui lòng nhập chiều cao</p>
+            <label for="cannang"><span class="fw-bold">Your weight</span> <span class=" ms-1">(Kg)</span></label>
+            <input class=" input-group-text w-100 p-1 mb-3" type="text" [(ngModel)]="cann" pattern="\d*" #cn maxlength="3" #kg placeholder="Enter your weight">
+            <p style="color:Red" *ngIf="info.cn">Please enter your weight</p>
+            <label for="chieucao"><span class="fw-bold">Your height</span> <span class=" ms-1">(Cm)</span></label>
+            <input class="input-group-text w-100 p-1 mb-3" [(ngModel)]="chieuc" type="text" pattern="\d*" #cc maxlength="3" #kg placeholder="Enter your height">
+            <p style="color:Red" *ngIf="info.cc">Please enter your height</p>
         </div>
         <div class="col-6">
-            <h2 class=" ">Kết quả</h2>
-            <p *ngIf="bmi">Theo nghiên cứu của WHO kết quả BMI của bạn là: <span class=" fw-bold">{{kqBMI|number}}</span></p>
-            <span>{{bmi}}</span>
+            <h1 class=" text-center">Test results</h1>
+            <div *ngIf="kqBMI!==undefined">
+                <p *ngIf="bmi" class=" fs-3 text-center">Your BMI: <span class="fw-bold" [style.color]="textColor">{{kqBMI|number}}</span></p>
+                <div class="col text-center">
+                    <span class=" text-center" [style.color]="textColor" style="font-size: 30px;font-weight: 500;">{{bmi}}</span>
+                </div>
+            </div>
         </div>
     </div>
     <br>
-    <button type="button" class="btn bg-primary text-light" #kq (click)="ketqua()">View Result</button>
+    <div class="col-6 d-flex justify-content-center">
+        <button type="button" class="btn bg-primary text-light col-6" #kq (click)="ketqua()">View Result</button>
+    </div>
 </div>
+<br><br>

@@ -1,0 +1,10 @@
+<button id="open-chat" (click)="openForm()" class=" d-flex align-items-center"><i class="fa-solid fa-messages"></i></button>
+    <div class="chat-popup" id="myForm"  [style.display]="openForm1">
+        <form action="" class="form-chat">
+            <h5>Chat with a consultant</h5>
+            <br>
+            <label for="msg"><b class="text-dark">Message</b></label>
+            <textarea placeholder="Enter message..." name="msg" required></textarea>
+            <button type="submit" class="btn"> Send</button>         
+        </form>
+    </div>

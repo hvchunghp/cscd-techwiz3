@@ -16,7 +16,7 @@
         </div>
         <div class="content-down d-flex justify-content-center">
             <ul class="options row d-flex justify-content-center container">
-                <li class="row d-flex justify-content-center col-lg col-md-4 col-4" *ngFor="let item of slideShow.homeBanner">
+                <li class="row d-flex justify-content-center col-lg col-md-4 col-4" *ngFor="let item of home.homeBanner">
                     <i class="{{item.icon}}"></i>
                     <span>
                       {{item.option}}
@@ -28,7 +28,7 @@
 </div>
 <div class="container py-5">
     <owl-carousel-o [options]="slide">
-        <ng-template carouselSlide *ngFor="let item of slideShow.homeSlide1">
+        <ng-template carouselSlide *ngFor="let item of home.homeSlide1">
             <div class="slide pr-2">
                 <a routerLink="">
                     <img src="{{item.image}}">
@@ -41,11 +41,11 @@
         </ng-template>
     </owl-carousel-o>
 </div>
-<div class="medical-online">
+<div class="grey-row medical-online">
     <div class="container py-5">
         <h3>Remote consultation via video</h3>
         <owl-carousel-o [options]="staticSlide">
-            <ng-template carouselSlide *ngFor="let item of slideShow.homeSlide2">
+            <ng-template carouselSlide *ngFor="let item of home.homeSlide2">
                 <div class="slide pr-2">
                     <a routerLink="">
                         <i class="fa-regular fa-video"></i>
@@ -57,26 +57,24 @@
         </owl-carousel-o>
     </div>
 </div>
-<div class="specialist">
-    <div class="container py-5">
-        <h3>Popular specialties</h3>
-        <owl-carousel-o [options]="staticSlide">
-            <ng-template carouselSlide *ngFor="let item of home.specialist">
-                <div class="slide pr-2">
-                    <a routerLink="">
-                        <img src="{{item.image}}">
-                        <h5><span class="text-dark">{{item.title}}</span></h5>
-                    </a>
-                </div>
-            </ng-template>
-        </owl-carousel-o>
-    </div>
+<div class="container py-5">
+    <h3>Popular specialties</h3>
+    <owl-carousel-o [options]="staticSlide">
+        <ng-template carouselSlide *ngFor="let item of dataForAll.specialist">
+            <div class="slide pr-2">
+                <a routerLink="">
+                    <img src="{{item.image}}">
+                    <h5><span class="text-dark">{{item.title}}</span></h5>
+                </a>
+            </div>
+        </ng-template>
+    </owl-carousel-o>
 </div>
-<div class="outstanding-medical-facility">
+<div class="grey-row">
     <div class="container py-5">
         <h3>Outstanding medical facility</h3>
         <owl-carousel-o [options]="staticSlide">
-            <ng-template carouselSlide *ngFor="let item of home.clinics">
+            <ng-template carouselSlide *ngFor="let item of dataForAll.clinics">
                 <div class="slide pr-2">
                     <a routerLink="">
                         <img src="{{item.image}}">
@@ -90,16 +88,88 @@
 <div class="container py-5 doctor">
     <h3>Outstanding Doctor</h3>
     <owl-carousel-o [options]="staticSlide">
-        <ng-template carouselSlide *ngFor="let item of home.doctor">
+        <ng-template carouselSlide *ngFor="let item of dataForAll.doctor">
             <div class="slide">
                 <a routerLink="appointments" class="d-flex justify-content-center row">
                     <div class="doc-img row text-center d-flex justify-content-center">
                         <img src="{{item.image}}" class="p-2">
-                        <h6><span class="text-dark">{{item.title}}</span></h6>
-                        <span class="text-dark">{{item.desc}}</span>
+                        <h6><b class="text-dark">{{item.title}}</b></h6>
+                        <span class="text-dark">{{item.subTitle}}</span>
                     </div>
                 </a>
             </div>
         </ng-template>
     </owl-carousel-o>
+</div>
+<div class="grey-row py-5">
+    <div class="container">
+        <h3 class="text-center">Health handbook</h3>
+        <div class="row pt-3">
+            <a routerLink="{{item.link}}" class="col-6 row" *ngFor="let item of home.handbook">
+                <img src="{{item.image}}" alt="">
+                <h4>
+                    <p class="text-dark">
+                        {{item.title}}
+                    </p>
+                </h4>
+                <p class="text-muted">
+                    {{item.subtitle}}
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="text-center py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3>Support</h3>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-6 col-md-6 col-lg-3" *ngFor="let item of home.support">
+                <div class="card">
+                    <img src="{{item.img}}" alt="">
+                    <div class="card-body">
+                        <div class="text-support">
+                            <h5 class="card-title">{{item.title}}</h5>
+                        </div>
+                        <div class="text-support">
+                            <a href="">{{item.subtitle}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div type="button" class="col-6 col-md-6 col-lg-3" data-bs-toggle="modal" data-bs-target="#ggmap">
+                <div class="card">
+                    <img src="../../../assets/images/ggmap.png" alt="">
+                    <div class="card-body">
+                        <div class="text-support">
+                            <h5 class="card-title">Direct Counseling</h5>
+                        </div>
+                        <div class="text-support">
+                            <a href="javascript:void(0)">Open Google map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade p-5" id="ggmap" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-fullscreen modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Google map</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.1013994288296!2d105.7796383511693!3d21.02862838592974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b32ecb92db%3A0x3964e6238a3bd088!2zOCBUw7RuIFRo4bqldCBUaHV54bq_dCwgTeG7uSDEkMOsbmgsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1660295535822!5m2!1svi!2s"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
 </div>

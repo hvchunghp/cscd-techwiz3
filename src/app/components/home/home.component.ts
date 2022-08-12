@@ -8,8 +8,8 @@ import dataForAll from '../../../assets/data/dataForAll.json';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  slideShow = home;
-  home = dataForAll;
+  home = home;
+  dataForAll = dataForAll;
   slide: OwlOptions = {
     loop: true,
     mouseDrag: true,
@@ -37,7 +37,7 @@ export class HomeComponent implements OnInit {
   };
 
   staticSlide: OwlOptions = {
-    loop: true,
+    loop: false,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,

@@ -1,3 +1,5 @@
+import { BMIComponent } from './components/bmi/bmi.component';
+import { NerveComponent } from './components/nerve/nerve.component';
 import { AppointmentDetailsComponent } from './components/appointment-details/appointment-details.component';
 import { BookAnApointmentComponent } from './components/book-an-apointment/book-an-apointment.component';
 import { AppointmentsComponent } from './components/appointments/appointments.component';
@@ -9,7 +11,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './components/contact/contact.component';
 import { QuestionComponent } from './components/question/question.component';
 import { PrescriptionComponent } from './components/prescription/prescription.component';
-import { BMIComponent } from './components/bmi/bmi.component';
 
 const routes: Routes = [
   {
@@ -43,18 +44,24 @@ const routes: Routes = [
     title: 'Confirm Book',
   },
   {
+    path: 'appointment-detail',
+    component: AppointmentDetailsComponent,
+    title: 'Appointment Detail',
+  },
+  {
+    path: 'specialist-detail',
+    component: NerveComponent,
+    title: 'Specialist Detail',
+  },
+  {
     path: 'prescription',
     component: PrescriptionComponent,
     title: 'Prescription',
   },
   {
-    path: 'bmi',
+    path: 'personal-health',
     component: BMIComponent,
-    title: 'BMI',
-  },
-  {
-    path: 'appointment-detail',
-    component: AppointmentDetailsComponent,
+    title: 'Personal health',
   },
 ];
 
