@@ -19,6 +19,8 @@ import { QuestionComponent } from './components/question/question.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BookAnApointmentComponent } from './components/book-an-apointment/book-an-apointment.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BMIComponent } from './components/bmi/bmi.component';
 
 @NgModule({
   declarations: [
@@ -37,12 +39,15 @@ import { BookAnApointmentComponent } from './components/book-an-apointment/book-
     FooterComponent,
     QuestionComponent,
     BookAnApointmentComponent,
+    BMIComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

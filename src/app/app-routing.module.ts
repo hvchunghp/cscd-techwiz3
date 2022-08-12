@@ -8,6 +8,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './components/contact/contact.component';
 import { QuestionComponent } from './components/question/question.component';
+import { PrescriptionComponent } from './components/prescription/prescription.component';
+import { BMIComponent } from './components/bmi/bmi.component';
 
 const routes: Routes = [
   {
@@ -39,6 +41,16 @@ const routes: Routes = [
     path: 'confirm-book',
     component: BookAnApointmentComponent,
     title: 'Confirm Book',
+  },
+  {
+    path: 'prescription',
+    component: PrescriptionComponent,
+    title: 'Prescription',
+  },
+  {
+    path: 'bmi',
+    component: BMIComponent,
+    title: 'BMI',
   },
   {
     path: 'appointment-detail',
