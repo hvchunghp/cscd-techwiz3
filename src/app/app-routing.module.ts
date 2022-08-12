@@ -11,6 +11,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './components/contact/contact.component';
 import { QuestionComponent } from './components/question/question.component';
 import { PrescriptionComponent } from './components/prescription/prescription.component';
+import { MedicationsComponent } from './components/medications/medications.component';
 
 const routes: Routes = [
   {
@@ -62,6 +63,11 @@ const routes: Routes = [
     path: 'personal-health',
     component: BMIComponent,
     title: 'Personal health',
+  },
+  {
+    path: 'medications',
+    component: MedicationsComponent,
+    title: 'Medications',
   },
 ];
 

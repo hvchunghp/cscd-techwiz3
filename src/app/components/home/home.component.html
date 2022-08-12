@@ -105,8 +105,8 @@
     <div class="container">
         <h3 class="text-center">Health handbook</h3>
         <div class="row pt-3">
-            <a routerLink="{{item.link}}" class="col-6 row" *ngFor="let item of home.handbook">
-                <img src="{{item.image}}" alt="">
+            <a routerLink="{{item.link}}" class="col-lg-6 col-md-12 col-12 row" *ngFor="let item of home.handbook">
+                <img src="{{item.image}}" alt="" height="300" width="540">
                 <h4>
                     <p class="text-dark">
                         {{item.title}}

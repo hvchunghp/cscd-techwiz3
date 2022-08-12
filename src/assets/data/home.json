@@ -120,11 +120,18 @@
         }
     ],
     "handbook": [{
-        "link": "bmi",
-        "image": "../../assets/images/bmi.jpg",
-        "title": "MEASURE YOUR WEIGHT - HEIGHT (BMI) ONLINE",
-        "subtitle": "Body mass index (BMI) is a measurement of a person's weight relative to his or her height. BMI can show you are at a normal weight..."
-    }],
+            "link": "personal-health",
+            "image": "../../assets/images/bmi.jpg",
+            "title": "MEASURE YOUR WEIGHT - HEIGHT (BMI) ONLINE",
+            "subtitle": "Body mass index (BMI) is a measurement of a person's weight relative to his or her height. BMI can show you are at a normal weight..."
+        },
+        {
+            "link": "medications",
+            "image": "../../assets/images/thuoc.jpg",
+            "title": "MEDICATIONS & MEDICAL INSTRUMENTS NEEDED IN THE HOUSEHOLD PHARMACY",
+            "subtitle": "We all know that every family should have a spare medicine cabinet for necessary health-related cases, but not everyone knows what to prepare for adequate and appropriate. CarePlus will help you with the medicines and medical supplies you need in your medicine cabinet!"
+        }
+    ],
     "support": [{
             "img": "../../../assets/images/support.svg",
             "title": "Contact for support",
