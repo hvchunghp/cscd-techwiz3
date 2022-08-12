@@ -124,5 +124,21 @@
         "image": "../../assets/images/bmi.jpg",
         "title": "MEASURE YOUR WEIGHT - HEIGHT (BMI) ONLINE",
         "subtitle": "Body mass index (BMI) is a measurement of a person's weight relative to his or her height. BMI can show you are at a normal weight..."
-    }]
+    }],
+    "support": [{
+            "img": "../../../assets/images/support.svg",
+            "title": "Contact for support",
+            "subtitle": "1900-010101"
+        },
+        {
+            "img": "../../../assets/images/facebook.svg",
+            "title": "Fanpage Facebook",
+            "subtitle": "Press here"
+        },
+        {
+            "img": "../../../assets/images/zalo.webp",
+            "title": "Support via Zalo",
+            "subtitle": "Press here"
+        }
+    ]
 }

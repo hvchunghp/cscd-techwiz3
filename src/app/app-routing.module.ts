@@ -1,3 +1,4 @@
+import { NerveComponent } from './components/nerve/nerve.component';
 import { AppointmentDetailsComponent } from './components/appointment-details/appointment-details.component';
 import { BookAnApointmentComponent } from './components/book-an-apointment/book-an-apointment.component';
 import { AppointmentsComponent } from './components/appointments/appointments.component';
@@ -8,8 +9,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './components/contact/contact.component';
 import { QuestionComponent } from './components/question/question.component';
-import { PrescriptionComponent } from './components/prescription/prescription.component';
-import { BMIComponent } from './components/bmi/bmi.component';
 
 const routes: Routes = [
   {
@@ -43,18 +42,12 @@ const routes: Routes = [
     title: 'Confirm Book',
   },
   {
-    path: 'prescription',
-    component: PrescriptionComponent,
-    title: 'Prescription',
-  },
-  {
-    path: 'bmi',
-    component: BMIComponent,
-    title: 'BMI',
-  },
-  {
     path: 'appointment-detail',
     component: AppointmentDetailsComponent,
+  },
+  {
+    path: 'specialist-detail',
+    component: NerveComponent,
   },
 ];
 

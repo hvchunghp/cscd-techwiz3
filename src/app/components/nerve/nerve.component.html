@@ -1,0 +1,185 @@
+<div class="page-header">
+    <div class="container">
+        <h3>Nerve</h3>
+        <h5>Neurological examination</h5>
+        <ul>
+            <li>Cerebral palsy</li>
+            <li>Headache , dizziness, nausea</li>
+            <li>Parkinson's disease, vestibular disease</li>
+            <li>Muscle spasms, nervous tension</li>
+            <li>Seizures, seizures of consciousness</li>
+            <li>Paralyzed half face, c low nerve</li>
+            <li>Restlessness, anxiety, nervousness, trembling hands</li>
+            <li>There are signs of hyperactivity</li>
+            <li>Neck cramps, headache with face, limbs, sweating</li>
+            <li>Head trauma, nerve</li>
+        </ul>
+    </div>
+</div>
+
+<div class="page-content">
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-3">
+                <select [(ngModel)]="displayMode" class="form-select" aria-label="Default select example">
+          <option value="all">Nationwide</option>
+          <option value="hanoi">Hanoi</option>
+          <option value="hcm">Ho Chi Minh</option>
+        </select>
+            </div>
+        </div>
+
+        <div *ngIf="displayMode == 'all'">
+            <div class="appointment-item p-3 mb-3" *ngFor="let d of data.hanoi">
+                <div class="row">
+                    <div class="col-12 col-md-7 row">
+                        <div class="col-3">
+                            <img src="{{d.thumbnail}}" />
+                        </div>
+                        <div class="col-lg-9">
+                            <h4 class="border-bottom pb-2">{{d.name}}</h4>
+                            <div class="pb-2">
+                                {{d.description}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="row mb-2">
+                            <select class="form-select" aria-label="Default select example">
+                <option *ngFor="let s of d.schedule">{{s.date}}</option>
+              </select>
+                        </div>
+                        <div class="row border-bottom pb-2 mb-2 gy-1">
+                            <b><i class="fa-regular fa-calendar"></i> EXAMINATION SCHEDULES</b>
+                            <button type="button" class="btn btn-light col-auto mr-1" *ngFor="let t of d.schedule[0].time"><b>{{t}}</b></button>
+                            <div class="pt-1" style="font-weight: lighter">Choose <i class="fa-solid fa-hand-pointer"></i> and book (Scheduling fee 0 VND)</div>
+                        </div>
+                        <div class="row border-bottom pb-2 mb-2">
+                            <b>ADDRESS OF EXAMINATION</b>
+                            <b>{{d.facility}}</b>
+                            <div>{{d.address}}</div>
+                        </div>
+                        <div class="row mb-2">
+                            <b>EXAMINATION PRICE</b>
+                            <div>{{d.price}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="appointment-item p-3 mb-3" *ngFor="let d of data.hcm">
+                <div class="row">
+                    <div class="col-12 col-md-7 row">
+                        <div class="col-3">
+                            <img src="{{d.thumbnail}}" />
+                        </div>
+                        <div class="col-lg-9">
+                            <h4 class="border-bottom pb-2">{{d.name}}</h4>
+                            <div class="pb-2">
+                                {{d.description}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="row mb-2">
+                            <select class="form-select" aria-label="Default select example">
+                <option *ngFor="let s of d.schedule">{{s.date}}</option>
+              </select>
+                        </div>
+                        <div class="row border-bottom pb-2 mb-2 gy-1">
+                            <b><i class="fa-regular fa-calendar"></i> EXAMINATION SCHEDULES</b>
+                            <button type="button" class="btn btn-light col-auto mr-1" *ngFor="let t of d.schedule[0].time"><b>{{t}}</b></button>
+                            <div class="pt-1" style="font-weight: lighter">Choose <i class="fa-solid fa-hand-pointer"></i> and book (Scheduling fee 0 VND)</div>
+                        </div>
+                        <div class="row border-bottom pb-2 mb-2">
+                            <b>ADDRESS OF EXAMINATION</b>
+                            <b>{{d.facility}}</b>
+                            <div>{{d.address}}</div>
+                        </div>
+                        <div class="row mb-2">
+                            <b>EXAMINATION PRICE</b>
+                            <div>{{d.price}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="displayMode == 'hanoi'">
+            <div class="appointment-item p-3 mb-3" *ngFor="let d of data.hanoi">
+                <div class="row">
+                    <div class="col-12 col-md-7 row">
+                        <div class="col-3">
+                            <img src="{{d.thumbnail}}" />
+                        </div>
+                        <div class="col-lg-9">
+                            <h4 class="border-bottom pb-2">{{d.name}}</h4>
+                            <div class="pb-2">
+                                {{d.description}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="row mb-2">
+                            <select class="form-select" aria-label="Default select example">
+                <option *ngFor="let s of d.schedule">{{s.date}}</option>
+              </select>
+                        </div>
+                        <div class="row border-bottom pb-2 mb-2 gy-1">
+                            <b><i class="fa-regular fa-calendar"></i> EXAMINATION SCHEDULES</b>
+                            <button type="button" class="btn btn-light col-auto mr-1" *ngFor="let t of d.schedule[0].time"><b>{{t}}</b></button>
+                            <div class="pt-1" style="font-weight: lighter">Choose <i class="fa-solid fa-hand-pointer"></i> and book (Scheduling fee 0 VND)</div>
+                        </div>
+                        <div class="row border-bottom pb-2 mb-2">
+                            <b>ADDRESS OF EXAMINATION</b>
+                            <b>{{d.facility}}</b>
+                            <div>{{d.address}}</div>
+                        </div>
+                        <div class="row mb-2">
+                            <b>EXAMINATION PRICE</b>
+                            <div>{{d.price}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="displayMode == 'hcm'">
+            <div class="appointment-item p-3 mb-3" *ngFor="let d of data.hcm">
+                <div class="row">
+                    <div class="col-12 col-md-7 row">
+                        <div class="col-3">
+                            <img src="{{d.thumbnail}}" />
+                        </div>
+                        <div class="col-lg-9">
+                            <h4 class="border-bottom pb-2">{{d.name}}</h4>
+                            <div class="pb-2">
+                                {{d.description}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="row mb-2">
+                            <select class="form-select" aria-label="Default select example">
+                <option *ngFor="let s of d.schedule">{{s.date}}</option>
+              </select>
+                        </div>
+                        <div class="row border-bottom pb-2 mb-2 gy-1">
+                            <b><i class="fa-regular fa-calendar"></i> EXAMINATION SCHEDULES</b>
+                            <button type="button" class="btn btn-light col-auto mr-1" *ngFor="let t of d.schedule[0].time"><b>{{t}}</b></button>
+                            <div class="pt-1" style="font-weight: lighter">Choose <i class="fa-solid fa-hand-pointer"></i> and book (Scheduling fee 0 VND)</div>
+                        </div>
+                        <div class="row border-bottom pb-2 mb-2">
+                            <b>ADDRESS OF EXAMINATION</b>
+                            <b>{{d.facility}}</b>
+                            <div>{{d.address}}</div>
+                        </div>
+                        <div class="row mb-2">
+                            <b>EXAMINATION PRICE</b>
+                            <div>{{d.price}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

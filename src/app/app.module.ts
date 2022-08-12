@@ -19,11 +19,9 @@ import { QuestionComponent } from './components/question/question.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BookAnApointmentComponent } from './components/book-an-apointment/book-an-apointment.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { BMIComponent } from './components/bmi/bmi.component';
+import { NerveComponent } from './components/nerve/nerve.component';
 import { PopUpChatComponent } from './components/pop-up-chat/pop-up-chat.component';
-
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,8 +39,8 @@ import { PopUpChatComponent } from './components/pop-up-chat/pop-up-chat.compone
     FooterComponent,
     QuestionComponent,
     BookAnApointmentComponent,
-    BMIComponent,
-    PopUpChatComponent
+    PopUpChatComponent,
+    NerveComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +48,6 @@ import { PopUpChatComponent } from './components/pop-up-chat/pop-up-chat.compone
     CarouselModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
