@@ -16,15 +16,6 @@
                 },
                 {
                     "content": "Disability issues and disadvantaged groups"
-                },
-                {
-                    "content": "Juvenile problems"
-                },
-                {
-                    "content": "Gender and sexuality"
-                },
-                {
-                    "content": "Problems in family relationships"
                 }
             ]
         },
@@ -45,15 +36,6 @@
                 },
                 {
                     "content": "Seizures, there are episodesc of loss of consciousness"
-                },
-                {
-                    "content": "Paralyzed half face, pinched nerve"
-                },
-                {
-                    "content": "Restlessness, anxiety, nervousness, trembling limbs"
-                },
-                {
-                    "content": "There are signs of hyperactivity"
                 }
             ]
         },
@@ -74,15 +56,6 @@
                 },
                 {
                     "content": "Nausea, bloating, stomach bloating, heartburn, flatulence"
-                },
-                {
-                    "content": "Esophageal spasm, Irritable bowel syndrome"
-                },
-                {
-                    "content": "Abdominal, stomach, colon, epigastric pain"
-                },
-                {
-                    "content": "Inflammation of the colon, stomach, duodenum"
                 }
             ]
         },
@@ -90,9 +63,6 @@
             "image": "../../assets/images/spec1.jpg",
             "title": "Musculoskeletal",
             "desc": [{
-                    "content": "Gout"
-                },
-                {
                     "content": "Osteoarthritis: knee joint, lumbar spine, cervical spine"
                 },
                 {
@@ -106,15 +76,6 @@
                 },
                 {
                     "content": "Osteoarthritis, bone spurs"
-                },
-                {
-                    "content": "Myositis, Muscle Atrophy, Myalgia"
-                },
-                {
-                    "content": "Muscle weakness, Muscular dystrophy"
-                },
-                {
-                    "content": "Injuries to muscles, bones, joints"
                 }
             ]
         },
@@ -135,15 +96,6 @@
                 },
                 {
                     "content": "Feeling nervous, heart beating fast"
-                },
-                {
-                    "content": "Congenital heart, history of heart disease, history of stroke"
-                },
-                {
-                    "content": "Heart stent placed, coronary angioplasty"
-                },
-                {
-                    "content": "Varicose veins leg"
                 }
             ]
         },
@@ -164,18 +116,6 @@
                 },
                 {
                     "content": "Sinusitis"
-                },
-                {
-                    "content": "Stuffy nose"
-                },
-                {
-                    "content": "Or nosebleed"
-                },
-                {
-                    "content": "Sore throat, difficulty swallowing"
-                },
-                {
-                    "content": "Prolonged cough"
                 }
             ]
         },
@@ -196,21 +136,6 @@
                 },
                 {
                     "content": "Toenail fungus"
-                },
-                {
-                    "content": "Hair loss, baldness"
-                },
-                {
-                    "content": "Atopic Dermatitis, Contact Dermatitis, Seborrheic Dermatitis"
-                },
-                {
-                    "content": "Folliculitis"
-                },
-                {
-                    "content": "Scleroderma"
-                },
-                {
-                    "content": "Shingles nerve"
                 }
             ]
         }
@@ -307,27 +232,57 @@
     "doctor": [{
             "image": "../../assets/images/doctor/doc1.jpg",
             "title": "Specialist Doctor II Tran Minh Khuyen",
-            "desc": "Mental health, Counseling, Psychotherapy"
+            "subTitle": "Mental health, Counseling, Psychotherapy",
+            "desc": [{
+                    "content": "The title of People's Doctor"
+                },
+                {
+                    "content": "Doctor specializing in Psychiatry, Psychiatry"
+                },
+                {
+                    "content": "Former Director of the National Institute of Mental Health, Bach Mai Hospital"
+                },
+                {
+                    "content": "Former Vice Dean of the Department of Psychiatry, Hanoi Medical University"
+                }
+            ],
+            "status": "Busy",
+            "subClass": "text-danger"
         },
         {
             "image": "../../assets/images/doctor/doctor-phamhuubinh.jpg",
             "title": "Assoc., PhD, Senior Lecturer Tran Huu Binh",
-            "desc": "Mental health"
+            "subTitle": "Mental health",
+            "desc": [{
+                    "content": "The title of People's Doctor"
+                },
+                {
+                    "content": "Doctor specializing in Psychiatry, Psychiatry"
+                },
+                {
+                    "content": "Former Director of the National Institute of Mental Health, Bach Mai Hospital"
+                },
+                {
+                    "content": "Former Vice Dean of the Department of Psychiatry, Hanoi Medical University"
+                }
+            ],
+            "status": "Free",
+            "subClass": "text-success"
         },
         {
             "image": "../../assets/images/doctor/doc2.jpg",
             "title": "Specialist Doctor II Tran Thi Hoai Huong",
-            "desc": "Dermatology"
+            "subTitle": "Dermatology"
         },
         {
             "image": "../../assets/images/doctor/doc3.jpg",
             "title": "Associate Professor, Doctor Nguyen Thi Hoai An",
-            "desc": "Mental health, Counseling, Psychotherapy"
+            "subTitle": "Mental health, Counseling, Psychotherapy"
         },
         {
             "image": "../../assets/images/doctor/doc4.jpg",
             "title": "Doctor, Pham Chi Lang",
-            "desc": "Musculoskeletal, Orthopedic trauma"
+            "subTitle": "Musculoskeletal, Orthopedic trauma"
         }
     ]
 }

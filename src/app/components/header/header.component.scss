@@ -89,6 +89,10 @@ li {
             }
         }
     }
+    img {
+        height: 250px;
+        object-fit: contain;
+    }
     .about {
         padding: 10px 0;
         background-color: #eee;

@@ -83,10 +83,11 @@
     <div class="offcanvas-body row">
         <div class="col-12 px-5" *ngFor="let item of header.specialist">
             <a href="" class="row p-3" style="border-top: 1px solid black">
-                <img data-src="{{item.image}}" class="col-lg-4 col-md-12 col-12">
-                <div class="col-lg-8 col-md-12 col-12">
+                <img data-src="{{item.image}}" class="col-lg-3 col-md-12 col-12">
+                <div class="col-lg-9 col-md-12 col-12">
                     <h3>{{item.title}}</h3>
                     <p class="text-muted" *ngFor=" let item2 of item.desc ">- {{item2.content}}</p>
+                    <p>...</p>
                 </div>
             </a>
         </div>
@@ -103,8 +104,8 @@
     <div class="offcanvas-body row">
         <div class="col-12 px-5" *ngFor="let item of header.clinics">
             <a href="" class="row p-3" style="border-top: 1px solid black">
-                <img data-src="{{item.image}}" class="col-lg-4 col-md-12 col-12">
-                <div class="col-lg-8 col-md-12 col-12">
+                <img data-src="{{item.image}}" class="col-lg-3 col-md-12 col-12">
+                <div class="col-lg-9 col-md-12 col-12">
                     <h3>{{item.title}}</h3>
                     <p>
                         <b>{{item.subtitle}}</b>
@@ -124,15 +125,16 @@
         </div>
     </div>
     <div class="offcanvas-body row">
-        <div class="col-12 px-5" *ngFor="let item of header.clinics">
+        <div class="col-12 px-5" *ngFor="let item of header.doctor">
             <a href="" class="row p-3" style="border-top: 1px solid black">
-                <img data-src="{{item.image}}" class="col-lg-4 col-md-12 col-12">
-                <div class="col-lg-8 col-md-12 col-12">
+                <img data-src="{{item.image}}" class="col-lg-3 col-md-12 col-12">
+                <div class="col-lg-9 col-md-12 col-12">
                     <h3>{{item.title}}</h3>
                     <p>
-                        <b>{{item.subtitle}}</b>
+                        <b>{{item.subTitle}}</b>
                     </p>
                     <p class="text-muted" *ngFor=" let item2 of item.desc ">- {{item2.content}}</p>
+                    <b><p>Status: <span class="{{item.subClass}}">{{item.status}}</span></p></b>
                 </div>
             </a>
         </div>
