@@ -39,7 +39,7 @@ import { BMIComponent } from './components/bmi/bmi.component';
     FooterComponent,
     QuestionComponent,
     BookAnApointmentComponent,
-    BMIComponent
+    BMIComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,7 +47,7 @@ import { BMIComponent } from './components/bmi/bmi.component';
     CarouselModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

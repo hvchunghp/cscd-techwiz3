@@ -118,5 +118,11 @@
             "image": "../../assets/images/teletherapy6.jpg",
             "title": "Doctor consulting F0"
         }
-    ]
+    ],
+    "handbook": [{
+        "link": "bmi",
+        "image": "../../assets/images/bmi.jpg",
+        "title": "MEASURE YOUR WEIGHT - HEIGHT (BMI) ONLINE",
+        "subtitle": "Body mass index (BMI) is a measurement of a person's weight relative to his or her height. BMI can show you are at a normal weight..."
+    }]
 }
