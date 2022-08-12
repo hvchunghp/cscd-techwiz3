@@ -47,7 +47,7 @@
                 </div>
                 <div class="sub-title">Choose hospital, clinic</div>
             </div>
-            <div class="child-content px-1" data-bs-toggle="offcanvas" data-bs-target="#">
+            <div class="child-content px-1" data-bs-toggle="offcanvas" data-bs-target="#doctors">
                 <div>
                     <b>Doctor</b>
                 </div>
@@ -79,7 +79,7 @@
         </div>
     </div>
     <div class="offcanvas-body row">
-        <div class="col-12 px-5" *ngFor="let item of header.col1">
+        <div class="col-12 px-5" *ngFor="let item of header.specialist">
             <a href="" class="row p-3" style="border-top: 1px solid black">
                 <img data-src="{{item.image}}" class="col-lg-4 col-md-12 col-12">
                 <div class="col-lg-8 col-md-12 col-12">
@@ -95,11 +95,34 @@
     <div class="offcanvas-header">
         <div class="d-flex align-items-center">
             <button type="button" class="btn back" data-bs-dismiss="offcanvas"><i class="fa-solid fa-left"></i></button>
-            <h3 class="px-3">Medical specialist</h3>
+            <h3 class="px-3">Health facilities</h3>
         </div>
     </div>
     <div class="offcanvas-body row">
-        <div class="col-12 px-5" *ngFor="let item of header.col2">
+        <div class="col-12 px-5" *ngFor="let item of header.clinics">
+            <a href="" class="row p-3" style="border-top: 1px solid black">
+                <img data-src="{{item.image}}" class="col-lg-4 col-md-12 col-12">
+                <div class="col-lg-8 col-md-12 col-12">
+                    <h3>{{item.title}}</h3>
+                    <p>
+                        <b>{{item.subtitle}}</b>
+                    </p>
+                    <p class="text-muted" *ngFor=" let item2 of item.desc ">- {{item2.content}}</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-top header-opt" id="doctors">
+    <div class="offcanvas-header">
+        <div class="d-flex align-items-center">
+            <button type="button" class="btn back" data-bs-dismiss="offcanvas"><i class="fa-solid fa-left"></i></button>
+            <h3 class="px-3">Doctor</h3>
+        </div>
+    </div>
+    <div class="offcanvas-body row">
+        <div class="col-12 px-5" *ngFor="let item of header.clinics">
             <a href="" class="row p-3" style="border-top: 1px solid black">
                 <img data-src="{{item.image}}" class="col-lg-4 col-md-12 col-12">
                 <div class="col-lg-8 col-md-12 col-12">

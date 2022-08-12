@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import home from '../../../assets/data/home.json';
 import { OwlOptions } from 'ngx-owl-carousel-o/lib/models/owl-options.model';
-
+import dataForAll from '../../../assets/data/dataForAll.json';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  home = home;
+  slideShow = home;
+  home = dataForAll;
   slide: OwlOptions = {
     loop: true,
     mouseDrag: true,

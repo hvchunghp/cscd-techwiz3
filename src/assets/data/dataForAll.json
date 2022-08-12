@@ -1,5 +1,5 @@
 {
-    "col1": [{
+    "specialist": [{
             "image": "../../assets/images/spec7.jpg",
             "title": "Counseling and therapy",
             "desc": [{
@@ -44,7 +44,7 @@
                     "content": "Muscle spasms, nerve tension"
                 },
                 {
-                    "content": "Seizures, there are episodes of loss of consciousness"
+                    "content": "Seizures, there are episodesc of loss of consciousness"
                 },
                 {
                     "content": "Paralyzed half face, pinched nerve"
@@ -215,7 +215,7 @@
             ]
         }
     ],
-    "col2": [{
+    "clinics": [{
             "image": "../../assets/images/fac1.jpg",
             "title": "Thu Cuc health system",
             "subtitle": "Thu Cuc Health System TCI is proud to be a medical unit trusted by millions of people and recognized by the Department of Health.",
@@ -235,49 +235,99 @@
         },
         {
             "image": "../../assets/images/fac2.jpg",
-            "title": "Bach Mai Hospital"
+            "title": "Bach Mai Hospital",
+            "desc": [{
+                    "content": "Currently, Bach Mai Hospital has 1,400 beds"
+                },
+                {
+                    "content": "All department heads and directors of centers have graduate degree"
+                },
+                {
+                    "content": "The patient mortality rate is only 0.8-0.9% and the hospital bed utilization rate is 153% (compared to the set criteria of 85%)."
+                }
+            ]
         },
         {
             "image": "../../assets/images/fac3.jpg",
-            "title": "Central Traditional Medicine Hospital"
+            "title": "Central Traditional Medicine Hospital",
+            "desc": [{
+                    "content": "The Central Hospital of Traditional Medicine is the leading hospital in the field of Traditional Medicine - The World Health Organization's Cooperation Center on Traditional Medicine in Vietnam."
+                },
+                {
+                    "content": "The hospital has 34 departments and centers divided into 4 blocks: clinical, subclinical, centers and functional departments."
+                },
+                {
+                    "content": "Patients who are directly examined and treated are professors, associate professors, doctors, masters, BSCKI, BSCKII with high expertise, many years of experience, who are leading experts in the field of traditional medicine."
+                }
+            ]
         },
         {
             "image": "../../assets/images/fac4.jpg",
-            "title": "Viet - Tiep Friendship Hospital"
+            "title": "Viet - Tiep Friendship Hospital",
+            "desc": [{
+                    "content": "Viet Tiep Friendship Hospital is the last general hospital in Hai Phong city."
+                },
+                {
+                    "content": "With 1400 planned beds and 2,223 actual beds organized into 10 rooms, functional departments, 32 clinical departments, 9 paraclinical departments and 3 centers"
+                },
+                {
+                    "content": "The hospital is the highest level responsible for medical examination and treatment for the people of Hai Phong city and neighboring provinces."
+                }
+            ]
         },
         {
             "image": "../../assets/images/fac5.png",
-            "title": "Vinmec international hospital"
+            "title": "Vinmec international hospital",
+            "desc": [{
+                    "content": "Vinmec is a not-for-profit medical system invested and developed by Vingroup, with a vision to become an international academic medical system through groundbreaking research to bring quality treatment. excellence and impeccable service."
+                },
+                {
+                    "content": "Established in 2012, Vinmec has a team of experienced professors, doctors, doctors, outstanding infrastructure, advanced equipment system, modern medical examination and treatment technology."
+                },
+                {
+                    "content": "Currently, Vinmec owns a system of international standard hospitals and polyclinics in many big cities and provinces across the country."
+                }
+            ]
         },
         {
             "image": "../../assets/images/fac6.jpg",
-            "title": "Central Cancer Hospital"
+            "title": "Central Cancer Hospital",
+            "desc": [{
+                    "content": "Vinmec is a not-for-profit medical system invested and developed by Vingroup, with a vision to become an international academic medical system through groundbreaking research to bring quality treatment. excellence and impeccable service."
+                },
+                {
+                    "content": "Established in 2012, Vinmec has a team of experienced professors, doctors, doctors, outstanding infrastructure, advanced equipment system, modern medical examination and treatment technology."
+                },
+                {
+                    "content": "Currently, Vinmec owns a system of international standard hospitals and polyclinics in many big cities and provinces across the country."
+                }
+            ]
         }
     ],
-    "col3": [{
+    "doctor": [{
             "image": "../../assets/images/doctor/doc1.jpg",
             "title": "Specialist Doctor II Tran Minh Khuyen",
-            "des": "Mental health, Counseling, Psychotherapy"
+            "desc": "Mental health, Counseling, Psychotherapy"
         },
         {
             "image": "../../assets/images/doctor/doctor-phamhuubinh.jpg",
             "title": "Assoc., PhD, Senior Lecturer Tran Huu Binh",
-            "des": "Mental health"
+            "desc": "Mental health"
         },
         {
             "image": "../../assets/images/doctor/doc2.jpg",
             "title": "Specialist Doctor II Tran Thi Hoai Huong",
-            "des": "Dermatology"
+            "desc": "Dermatology"
         },
         {
             "image": "../../assets/images/doctor/doc3.jpg",
             "title": "Associate Professor, Doctor Nguyen Thi Hoai An",
-            "des": "Mental health, Counseling, Psychotherapy"
+            "desc": "Mental health, Counseling, Psychotherapy"
         },
         {
             "image": "../../assets/images/doctor/doc4.jpg",
             "title": "Doctor, Pham Chi Lang",
-            "des": "Musculoskeletal, Orthopedic trauma"
+            "desc": "Musculoskeletal, Orthopedic trauma"
         }
     ]
 }
