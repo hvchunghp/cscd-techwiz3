@@ -8,6 +8,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './components/contact/contact.component';
 import { QuestionComponent } from './components/question/question.component';
+import {NerveComponent} from "./components/nerve/nerve.component";
 
 const routes: Routes = [
   {
@@ -44,6 +45,10 @@ const routes: Routes = [
     path: 'appointment-detail',
     component: AppointmentDetailsComponent,
   },
+  {
+    path: 'nerve',
+    component: NerveComponent,
+  }
 ];
 
 @NgModule({
