@@ -1,3 +1,4 @@
+import { BMIComponent } from './components/bmi/bmi.component';
 import { NerveComponent } from './components/nerve/nerve.component';
 import { AppointmentDetailsComponent } from './components/appointment-details/appointment-details.component';
 import { BookAnApointmentComponent } from './components/book-an-apointment/book-an-apointment.component';
@@ -48,6 +49,10 @@ const routes: Routes = [
   {
     path: 'specialist-detail',
     component: NerveComponent,
+  },
+  {
+    path: 'bmi',
+    component: BMIComponent,
   },
 ];
 
