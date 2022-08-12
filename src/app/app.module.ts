@@ -21,6 +21,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BookAnApointmentComponent } from './components/book-an-apointment/book-an-apointment.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BMIComponent } from './components/bmi/bmi.component';
+import { PopUpChatComponent } from './components/pop-up-chat/pop-up-chat.component';
+
 
 @NgModule({
   declarations: [
@@ -40,6 +42,7 @@ import { BMIComponent } from './components/bmi/bmi.component';
     QuestionComponent,
     BookAnApointmentComponent,
     BMIComponent,
+    PopUpChatComponent
   ],
   imports: [
     BrowserModule,
