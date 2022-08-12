@@ -21,7 +21,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BookAnApointmentComponent } from './components/book-an-apointment/book-an-apointment.component';
 import { NerveComponent } from './components/nerve/nerve.component';
 import { PopUpChatComponent } from './components/pop-up-chat/pop-up-chat.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BMIComponent } from './components/bmi/bmi.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +42,7 @@ import { FormsModule } from '@angular/forms';
     BookAnApointmentComponent,
     PopUpChatComponent,
     NerveComponent,
+    BMIComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +50,7 @@ import { FormsModule } from '@angular/forms';
     CarouselModule,
     BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

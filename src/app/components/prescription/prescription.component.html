@@ -1,126 +1,133 @@
-<div class="container">
-    <form method="post" (submit)="submit()">
-        <div class="row flex-column">
+<div class="container" style="margin:25px auto">
+    <form method="post" (ngSubmit)="submit()">
+        <div class="row ">
             <div class="col-6">
-                <div class="col-4 ">
-                    <label for="" class="form-label">Họ tên</label>
-                    <input id="startDate" class="form-control" type="text" placeholder="Họ và Tên người sử dụng" />
-                    <!-- <span *ngIf="fullname">vui long nhap ho ten</span> -->
-                </div> <br>
-                <div class="col-3">
-                    <label for="" class="form-label">Thanh pho</label>
+                <div class="col mb-2">
+                    <label for="" class="form-label">Patient Name</label>
+                    <input id="startDate" required class="form-control" #fullname="ngModel" name="fullname" [(ngModel)]="forminput.fullname" type="text" placeholder="Họ và Tên người sử dụng" />
+                    <span *ngIf="fullname.invalid" style="color:red">Please enter Your Fullname</span>
+                </div>
+
+                <div class="col mb-2">
+                    <label for="" class="form-label">City</label>
                     <select class="form-control form-control-sm|form-control-lg" required name="" id="" (change)="changeCity($event.target)">
-    <option *ngFor="let i of city; let j=index" value="{{j}}">{{i.name}}</option>
-  </select>
+                      <option *ngFor="let i of city; let j=index" value="{{j}}">{{i.name}}</option>
+                    </select>
                 </div>
-                <div class=" col-3">
-                    <label for="" class="form-label">Quan Huyen</label>
+                <div class=" col mb-2">
+                    <label for="" class="form-label">District</label>
                     <select class="form-control form-control-sm|form-control-lg" required name="" id="" (change)="changedistrict($event.target)">
-    <option *ngFor="let i of district; let j=index" value="{{j}}">{{i.name}}</option>
-  </select>
+                      <option *ngFor="let i of district; let j=index" value="{{j}}">{{i.name}}</option>
+                    </select>
                 </div>
-                <div class="col-3">
-                    <label for="" class="form-label">Phuong Xa</label>
+                <div class="col mb-2">
+                    <label for="" class="form-label">Ward</label>
                     <select class="form-control form-control-sm|form-control-lg" required name="" id="">
-          <option *ngFor="let i of wards; let j=index" value="{{j}}">{{i.name}}</option>
-        </select>
+                      <option *ngFor="let i of wards; let j=index" value="{{j}}">{{i.name}}</option>
+                    </select>
                 </div>
-                <div class="col-4">
-                    <label for="" class="form-label">Cơ Sở KCB</label>
+                <div class="col mb-2">
+                    <label for="" class="form-label">Specific address</label>
+                    <input id="startDate" class="form-control" name="Specificaddress" #Sadd="ngModel" [(ngModel)]="forminput.Specificaddress" required type="text" placeholder="Specific address" />
+                    <span *ngIf="Sadd.invalid" style="color:red">Please enter Your address</span>
+                </div>
+                <div class="col mb-2">
+                    <label for="" class="form-label">Health Facilities</label>
                     <select class="form-control form-control-sm|form-control-lg" required name="" id="">
-          <option *ngFor="let i of medicalfacility">{{i}}</option>
-        </select>
+                      <option *ngFor="let i of medical_name">{{i}}</option>
+                    </select>
                 </div>
-                <div class="col-4">
-                    <label for="" class="form-label">Tu Ngay</label>
-                    <input id="startDate" class="form-control" type="date" required/>
-                    <!-- <span id="startDateSelected">Chọn ngày :</span> -->
+                <div class="d-flex mb-2">
+                    <div class="col-6">
+                        <label for="" class="form-label">From</label>
+                        <input id="startDate" name="dateform" [(ngModel)]="forminput.dateFrom" class="form-control" type="date" required/>
+                        <!-- <span id="startDateSelected">Chọn ngày :</span> -->
+                    </div>
+                    <div class="col-6 ">
+                        <label for="" class="form-label">To</label>
+                        <input id="startDate" name="dateto" [(ngModel)]="forminput.dateTo" class="form-control" type="date" required/>
+                        <!-- <span id="startDateSelected">Chọn ngày :</span> -->
+                    </div>
                 </div>
-                <div class="col-4">
-                    <label for="" class="form-label">Den Ngay</label>
-                    <input id="startDate" class="form-control" type="date" required/>
-                    <!-- <span id="startDateSelected">Chọn ngày :</span> -->
-                </div>
+                <br>
+                <button type="submit" class=" btn bg-primary  ms-3  col-3 text-light">Submit</button>
             </div>
-            <div class="col"></div>
+            <div class="col-6 row">
+
+                <div class="col-12 row ">
+                    <div class="col-5">
+                        <img src="{{doctorIMG}}" alt="" style="border-radius: 50%;" data-mdb-toggle="animation" data-mdb-animation-reset="true" data-mdb-animation="zoom-in" data-mdb-animation-start="onHover">
+                    </div>
+                    <div class="col-7 row align-items-center">
+                        <h3>{{ddtt}}</h3>
+                        <p>{{ddDesc}}</p>
+                    </div>
+                </div>
+
+                <div class="col-5">
+                    <label for="" class="form-label">Doctor prescribes</label>
+                    <select name="doctor" id="" (change)="changeDT($event.target)" class=" form-select ">
+                      <option  *ngFor="let i of doctorDt;let j =index" value="{{j}}">{{i.name}}</option>
+                    </select>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-12  mb-2">
+                            <label for="" class="form-label">Medicine name</label>
+                            <input required class="form-control" type="text" placeholder="Nhập tên thuốc" (click)="mdcName()" #medicine [value]="medicineName1">
+                            <div *ngIf="show">
+                                <ul class="medicineName">
+                                    <li class="mdcName" type="botton" *ngFor="let i of medicineName" (click)="mdcNamePick(i.name)">{{i.name}}</li>
+                                    <!-- *ngFor="let i of medicineName" -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 row mb-2">
+                            <div class="col-6">
+                                <label for="" class="form-label">Amount</label>
+                                <input required class="form-control" type="number" placeholder="Amount" />
+                            </div>
+                            <div class="col form-check">
+                                <label for="" class="form-label">User</label><br>
+                                <div class="ms-5">
+                                    <input required type="checkbox" name="object" value="Người Lớn" #checks [checked]="checkbox" class="form-check-input " (change)="checkk(checks.checked)" /><span>Người Lớn</span><br>
+                                    <input required class="form-check-input" name="object" type="checkbox" #checks2 [checked]="!checkbox" (change)="checkk(!checks2.checked)" value="Trẻ Nhỏ" /><span>Trẻ Nhỏ</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12  mb-2">
+                            <label for="" class="form-label">Attention</label><br>
+                            <textarea name="note" id="" cols="65" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <button type="button" (click)="submitMDC()" class=" btn bg-primary text-light">Add medicine</button>
+                </div>
+
+            </div>
         </div>
-        <button type="submit" class=" btn bg-primary">Submit2</button>
+
     </form>
-
     <hr>
-
-    <div>
-        <div class="row">
-            <div class="col-3">
-                <label for="" class="form-label">Tên thuốc</label>
-                <input required class="form-control" type="text" placeholder="Nhập tên thuốc" (focus)="mdcName()" [value]="medicineName1">
-                <div *ngIf="show">
-                    <ul class="medicineName">
-                        <li class="mdcName" type="botton" *ngFor="let i of medicineName" (click)="mdcNamePick(i.name)">{{i.name}}</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-2">
-                <label for="" class="form-label">Số lượng</label>
-                <input required class="form-control" type="number" placeholder="Số lượng" />
-            </div>
-            <div class="col-2 form-check">
-                <label for="" class="form-label">Đối Tượng</label><br>
-                <input required type="checkbox" name="object" value="Người Lớn" #checks [checked]="checkbox" class="form-check-input" (change)="checkk(checks.checked)" /><span>Người Lớn</span><br>
-                <input required class="form-check-input" name="object" type="checkbox" #checks2 [checked]="!checkbox" (change)="checkk(!checks2.checked)" value="Trẻ Nhỏ" /><span>Trẻ Nhỏ</span>
-            </div>
-            <div class="col">
-                <label for="" class="form-label">Lưu ý</label><br>
-                <textarea name="note" id="" cols="50" rows="3"></textarea>
-            </div>
-        </div>
-        <button type="button" (click)="submitMDC()" class=" btn bg-success">Submit2</button>
-    </div>
-    <hr>
+    <h3>Bronchitis - rhinitis</h3>
     <table #table1 class="border-1">
         <thead class="">
             <tr>
-                <th>stt</th>
-                <th>Tên Thuốc</th>
-                <th>Số lượng</th>
-                <th>Cách dùng</th>
-                <th>Lưu ý</th>
+                <th style="width:5%">stt</th>
+                <th style="width:30%">Medicine name</th>
+                <th style="width:5%">Date</th>
+                <th style="width:30%">Usage</th>
+                <th style="width:30%">Attention</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td scope="row">1</td>
-                <td>Tên Thuốc</td>
-                <td>Số lượng</td>
-                <td>Cách dùng</td>
-                <td>luu y</td>
+            <tr *ngFor="let i of medicalfacility">
+                <td>{{i.stt}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.date}}</td>
+                <td>{{i.CSD}}</td>
+                <td>Use after eating</td>
             </tr>
         </tbody>
     </table>
 </div>
-<style>
-    table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-    }
-
-    td,
-    th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-    }
-
-    .medicineName {
-        list-style: none;
-    }
-
-    .mdcName {
-        margin: 2px;
-    }
-
-    .mdcName:hover {
-        background: rgb(206, 206, 206);
-    }
-</style>
