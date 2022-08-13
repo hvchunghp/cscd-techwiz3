@@ -1,7 +1,7 @@
 <div class="container" style="margin:25px auto">
     <form method="post" (ngSubmit)="submit()">
         <div class="row ">
-            <div class="col-6">
+            <div class="col-xl-6 col-md-5">
                 <div class="col mb-2">
                     <label for="" class="form-label">Patient Name</label>
                     <input id="startDate" required class="form-control" #fullname="ngModel" name="fullname" [(ngModel)]="forminput.fullname" type="text" placeholder="Họ và Tên người sử dụng" />
@@ -54,19 +54,20 @@
                   Submit
                 </button>
             </div>
-            <div class="col-6 row">
+            <br>
+            <div class="col-xl-6 col-md-7 row">
 
-                <div class="col-12 row ">
-                    <div class="col-5">
+                <div class="col-xl-12 row ">
+                    <div class="col-xl-5">
                         <img src="{{doctorIMG}}" alt="" style="border-radius: 50%;" data-mdb-toggle="animation" data-mdb-animation-reset="true" data-mdb-animation="zoom-in" data-mdb-animation-start="onHover">
                     </div>
-                    <div class="col-7 row align-items-center">
+                    <div class="col-xl-7 row align-items-center">
                         <h3>{{ddtt}}</h3>
                         <p>{{ddDesc}}</p>
                     </div>
                 </div>
 
-                <div class="col-5">
+                <div class="col-xl-5">
                     <label for="" class="form-label">Doctor prescribes</label>
                     <select name="doctor" id="" (change)="changeDT($event.target)" class=" form-select ">
                       <option  *ngFor="let i of doctorDt;let j =index" value="{{j}}">{{i.name}}</option>
@@ -74,7 +75,7 @@
                 </div>
                 <div>
                     <div class="row">
-                        <div class="col-12  mb-2">
+                        <div class="col-xl-12  mb-2">
                             <label for="" class="form-label">Medicine name</label>
                             <input required class="form-control" type="text" placeholder="Nhập tên thuốc" (click)="mdcName()" #medicine [value]="medicineName1">
                             <div *ngIf="show">
@@ -84,12 +85,12 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-12 row mb-2">
-                            <div class="col-6">
+                        <div class="col-xl-12 row mb-2">
+                            <div class="col-xl-4">
                                 <label for="" class="form-label">Amount</label>
                                 <input required class="form-control" type="number" placeholder="Amount" />
                             </div>
-                            <div class="col form-check">
+                            <div class=" col-xl form-check">
                                 <label for="" class="form-label">User</label><br>
                                 <div class="ms-5">
                                     <input required type="checkbox" name="object" value="Người Lớn" #checks [checked]="checkbox" class="form-check-input " (change)="checkk(checks.checked)" /><span>Người Lớn</span><br>
@@ -98,7 +99,7 @@
                             </div>
                         </div>
 
-                        <div class="col-12  mb-2">
+                        <div class="col-xl-12  mb-2">
                             <label for="" class="form-label">Attention</label><br>
                             <textarea name="note" id="" cols="65" rows="3"></textarea>
                         </div>
@@ -112,26 +113,28 @@
     </form>
     <hr>
     <h3>Bronchitis - rhinitis</h3>
-    <table #table1 class="border-1">
-        <thead class="">
-            <tr>
-                <th style="width:5%">stt</th>
-                <th style="width:30%">Medicine name</th>
-                <th style="width:5%">Date</th>
-                <th style="width:30%">Usage</th>
-                <th style="width:30%">Attention</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let i of medicalfacility">
-                <td>{{i.stt}}</td>
-                <td>{{i.name}}</td>
-                <td>{{i.date}}</td>
-                <td>{{i.CSD}}</td>
-                <td>Use after eating</td>
-            </tr>
-        </tbody>
-    </table>
+    <div style="overflow-x:auto;">
+        <table #table1 class="border-1 table">
+            <thead class="">
+                <tr>
+                    <th style="width:5%" scope="col">stt</th>
+                    <th style="width:30%" scope="col">Medicine name</th>
+                    <th style="width:5%" scope="col">Date</th>
+                    <th style="width:30%" scope="col">Usage</th>
+                    <th style="width:30%" scope="col">Attention</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of medicalfacility">
+                    <td scope="row">{{i.stt}}</td>
+                    <td>{{i.name}}</td>
+                    <td>{{i.date}}</td>
+                    <td>{{i.CSD}}</td>
+                    <td>Use after eating</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 <!-- Button trigger modal -->
 
