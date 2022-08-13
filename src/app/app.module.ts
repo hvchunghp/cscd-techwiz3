@@ -10,7 +10,6 @@ import { AppointmentsComponent } from './components/appointments/appointments.co
 import { PrescriptionComponent } from './components/prescription/prescription.component';
 import { PersonalHealthComponent } from './components/personal-health/personal-health.component';
 import { AppointmentDetailsComponent } from './components/appointment-details/appointment-details.component';
-import { SelfHealthTipsComponent } from './components/self-health-tips/self-health-tips.component';
 import { HealthMeasuresComponent } from './components/health-measures/health-measures.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -35,7 +34,6 @@ import { MedicationsComponent } from './components/medications/medications.compo
     PrescriptionComponent,
     PersonalHealthComponent,
     AppointmentDetailsComponent,
-    SelfHealthTipsComponent,
     HealthMeasuresComponent,
     FeedbackComponent,
     ContactComponent,
@@ -46,7 +44,7 @@ import { MedicationsComponent } from './components/medications/medications.compo
     MedicationsComponent,
     PopUpChatComponent,
     NerveComponent,
-    BMIComponent
+    BMIComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,7 +52,7 @@ import { MedicationsComponent } from './components/medications/medications.compo
     CarouselModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

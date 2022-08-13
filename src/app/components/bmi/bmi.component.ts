@@ -26,7 +26,7 @@ export class BMIComponent implements OnInit {
     this.info.cc = this.chieuc == undefined ? true : false;
     if (this.kqBMI < 18.5) {
       this.bmi =
-        ', you need to work hard to eat enough nutrients and live in moderation';
+        'Underweight, you need to work hard to eat enough nutrients and live in moderation';
       this.textColor = '#93B4D7';
     } else if (this.kqBMI > 18.5 && this.kqBMI < 24.9) {
       this.bmi =
@@ -37,7 +37,7 @@ export class BMIComponent implements OnInit {
       this.textColor = '#FAD548';
     } else if (this.kqBMI >= 30 && this.kqBMI < 34.9) {
       this.bmi =
-        'Opese, you need consuming fewer calories, eating healthily, exercising more, and watching your weight can help reduce body weight.';
+        'Obese, you need consuming fewer calories, eating healthily, exercising more, and watching your weight can help reduce body weight.';
       this.textColor = '#E7985F';
     } else if (this.kqBMI >= 35) {
       this.bmi =
