@@ -1,14 +1,18 @@
 <div class="container">
     <img style="max-width: 100%;" src="https://benhvienvanhanh.com/wp-content/uploads/2022/01/20190515_023832_291922_chi-so-BMI-gay-beo.max-1800x1800-1.jpg" alt="">
     <div class="row">
-        <div class="col-xl-6 col-md-6">
+        <div class="col-xl-6 col-md-6 mb-3">
             <label for="cannang"><span class="fw-bold">Your weight</span> <span class=" ms-1">(Kg)</span></label>
             <input class=" input-group-text w-100 p-1 mb-3" type="text" [(ngModel)]="cann" pattern="\d*" #cn maxlength="3" #kg placeholder="Enter your weight">
             <p style="color:Red" *ngIf="info.cn">Please enter your weight</p>
             <label for="chieucao"><span class="fw-bold">Your height</span> <span class=" ms-1">(Cm)</span></label>
             <input class="input-group-text w-100 p-1 mb-3" [(ngModel)]="chieuc" type="text" pattern="\d*" #cc maxlength="3" #kg placeholder="Enter your height">
             <p style="color:Red" *ngIf="info.cc">Please enter your height</p>
+            <div class="col-xl col-md col-sm d-flex justify-content-center ">
+                <button type="button" class="btn bg-primary text-light col-6" #kq (click)="ketqua()">View Result</button>
+            </div>
         </div>
+
         <div class="col-xl-6 col-md-6">
             <h1 class=" text-center">Test results</h1>
             <div *ngIf="kqBMI!==undefined">
@@ -20,9 +24,7 @@
         </div>
     </div>
     <br>
-    <div class="col-xl-6 col-xl-6 d-flex justify-content-center">
-        <button type="button" class="btn bg-primary text-light col-6" #kq (click)="ketqua()">View Result</button>
-    </div>
+
 </div>
 
 <br><br>
